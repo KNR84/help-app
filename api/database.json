@@ -1,49 +1,69 @@
 {
   "users": [
     {
-      "id": 1,
       "userName": "Kari",
       "email": "kari@me.com",
       "password": "123",
       "isParent": "yes",
       "isAdmin": "yes",
-      "familyId": 1
+      "id": 1
     },
     {
-      "id": 2,
       "userName": "Cohen",
       "email": "cohen@me.com",
       "password": "123",
       "isParent": "no",
       "isAdmin": "no",
-      "familyId": 1
+      "id": 2
     },
     {
-      "id": 3,
       "userName": "Scotty",
       "email": "scotty@me.com",
       "password": "123",
       "isParent": "yes",
       "isAdmin": "no",
-      "familyId": 1
+      "id": 3
     },
     {
-      "id": 4,
       "userName": "Steve",
       "email": "steve@me.com",
       "password": "123",
       "isParent": "yes",
       "isAdmin": "yes",
-      "familyId": 2
+      "id": 4
     },
     {
-      "id": 5,
       "userName": "Titus",
       "email": "titus@me.com",
       "password": "123",
       "isParent": "no",
       "isAdmin": "no",
-      "familyId": 2
+      "id": 5
+    },
+    {
+      "userName": "Jonas",
+      "email": "jonas@me.com",
+      "password": "123",
+      "isParent": true,
+      "isAdmin": true,
+      "id": 6
+    },
+    {
+      "userName": "Emmett",
+      "email": "emmett@me.com",
+      "password": "123",
+      "isParent": true,
+      "isAdmin": true,
+      "id": 7
+    },
+    {
+      "userName": "Dr. Test",
+      "email": "test@me.com",
+      "password": "testing",
+      "isParent": true,
+      "isAdmin": true,
+      "familyId": "",
+      "id": 8
     }
   ]
 }
