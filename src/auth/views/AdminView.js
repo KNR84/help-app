@@ -1,4 +1,4 @@
-//higher order component that returns the webpage meant for administrators
+//higher order component that only returns the webpage meant for administrators
 import { Outlet, Route, Routes } from "react-router-dom"
 
 
@@ -9,8 +9,7 @@ export const AdminView = () => {
         <Routes>
             <Route path="/" element={
                 <>
-                    <h1>Admin View</h1>
-                    <div>If you see me, you da boss</div>
+                  
 
                     <Outlet />
                 </>

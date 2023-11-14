@@ -7,12 +7,11 @@ export const Register = (props) => {
         userName: "",
         email: "",
         password: "",
-        isParent: true,
         isAdmin: true,
-        familyId: ""                                       //this needs work
+        familyId: ""                                     
     })
     let navigate = useNavigate()
-    const registerNewUser = () => {
+    const registerNewUser = () => {                                         //this will now be register family change URL to grab family table instead of users
         return fetch("http://localhost:8088/users", {
             method: "POST",
             headers: {
@@ -28,9 +27,8 @@ export const Register = (props) => {
                         userName: "",
                         email: "",
                         password: "",
-                        parent: createdUser.isParent,
                         admin: createdUser.isAdmin,
-                        familyId: ""                         //this needs work
+                        familyId: ""                         
                     }))
                     navigate("/")
                 }
@@ -79,21 +77,9 @@ export const Register = (props) => {
                         placeholder="Password" required />
                 </fieldset>
                 
-                <fieldset>
-                <label htmlFor="email">Select all that apply </label>
-                <br></br>
-                <i>only one admin per account</i>
-                </fieldset>
+               
                 
-                <fieldset>
-                    <input onChange={(evt) => {
-                        const copy = {...user}
-                        copy.isParent = evt.target.checked
-                        setUser(copy)
-                    }}
-                        type="checkbox" id="isParent" />
-                    <label htmlFor="email"> Parent </label>
-                </fieldset>
+                
                 <fieldset>
                     <input onChange={(evt) => {
                         const copy = {...user}
@@ -101,7 +87,7 @@ export const Register = (props) => {
                         setUser(copy)
                     }} 
                         type="checkbox" id="isAdmin" /> 
-                    <label htmlFor="email"> Administrator </label>
+                    <label htmlFor="email"> Account Administrator </label>
                 </fieldset>
                 <fieldset>
                     <button type="submit"> Register </button>
