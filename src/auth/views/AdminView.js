@@ -1,24 +1,34 @@
-//higher order component that only returns the webpage meant for administrators
+//component that renders only AdminViews
 import { Outlet, Route, Routes } from "react-router-dom"
+import { UserList } from "../../admin/UserList"
+import { AddNewUser } from "../../admin/AddNewUser"
 
 
 
 
+
+
+//renders the ticket list to the webpage using the Route function. 
 export const AdminView = () => {
 	return (
         <Routes>
             <Route path="/" element={
                 <>
-                  
+                   
 
                     <Outlet />
                 </>
             }>
 
-                <Route path="adminView" element={ <AdminView/>} />
-              
+                <Route path="UserList" element={ <UserList/>} />  
+                <Route path="AddNewUser" element={ <AddNewUser/>} />  
+                
                 
             </Route>
         </Routes>
     )
 }
+
+
+
+

@@ -1,4 +1,5 @@
 import { AdminView } from "./AdminView";
+import { NonAdminView } from "./AdminView";
 
 
 
@@ -11,8 +12,9 @@ export const ApplicationViews = () => {
     if (honeyUserObject.admin) {
         // return admin views
         return <AdminView/>;
-   } else {
-        // return parent views
-        return <NonAdminView />;     //add this module
-    }
+   } 
+//    else {
+//         // return parent views
+//         return <NonAdminView />;     //add this module
+//     }
 }

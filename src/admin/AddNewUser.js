@@ -1,14 +1,20 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import "./Login.css"
 
-export const Register = (props) => {
+
+export const AddNewUser = (props) => {
+
+
+    const localhelpAppUser = localStorage.getItem("helpApp_user")
+    const helpAppUserObject = JSON.parse(localhelpAppUser)
+
+
     const [user, setUser] = useState({
         userName: "",
         email: "",
         password: "",
-        isAdmin: true,
-        familyId: ""                                     
+        isAdmin: false,
+        familyId: helpAppUserObject.familyId                                    
     })
     let navigate = useNavigate()
     const registerNewUser = () => {                                       
@@ -22,7 +28,7 @@ export const Register = (props) => {
             .then(res => res.json())
             .then(createdUser => {
                 if (createdUser.hasOwnProperty("id")) {
-                    localStorage.setItem("honey_user", JSON.stringify({
+                    localStorage.setItem("helpApp_user", JSON.stringify({
                         id: createdUser.id,
                         userName: "",
                         email: "",
@@ -57,40 +63,27 @@ export const Register = (props) => {
     return (
         <main style={{ textAlign: "center" }}>
             <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Create your account</h1>
+                <h1 className="h3 mb-3 font-weight-normal">Add new user to your family</h1>
                 <fieldset>
-                    <label htmlFor="userName"> Parent/Guardian name: </label>
+                    <label htmlFor="userName"> User Name: </label>
                     <input onChange={updateUser}
                            type="text" id="userName" className="form-control"
-                           placeholder="Enter your name" required autoFocus />
+                           placeholder="Enter user name" required autoFocus />
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="email"> Parent/Guardian email </label>
+                    <label htmlFor="email"> Email </label>
                     <input onChange={updateUser}
                         type="email" id="email" className="form-control"
-                        placeholder="Email address" required />
+                        placeholder="user email address" required />
                 </fieldset>
                 <fieldset>
                     <label htmlFor="password"> Password </label>
                     <input onChange={updateUser}
                         type="password" id="password" className="form-control"
-                        placeholder="Password" required />
-                </fieldset>
-                
-               
-                
-                
-                <fieldset>
-                    <input onChange={(evt) => {
-                        const copy = {...user}
-                        copy.isAdmin = evt.target.checked
-                        setUser(copy)
-                    }} 
-                        type="checkbox" id="isAdmin" /> 
-                    <label htmlFor="email"> Account Administrator </label>
+                        placeholder="user password" required />
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Register </button>
+                    <button type="submit"> Register New User </button>
                 </fieldset>
             </form>
         </main>

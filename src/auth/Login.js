@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
 
-//check the img path on line 35 with Barry on Monday
+
 
 export const Login = () => {
-    const [email, setEmail] = useState("me@me.com");
+    const [email, setEmail] = useState("kari@me.com");
     const [password, setPassword] = useState("");
     const navigate = useNavigate()
     
@@ -17,10 +17,10 @@ export const Login = () => {
             .then(foundUsers => {
                 if (foundUsers.length === 1) {
                     const user = foundUsers[0]
-                    localStorage.setItem("honey_user", JSON.stringify({
+                    localStorage.setItem("helpApp_user", JSON.stringify({
                         id: user.id,
-                        parent: user.isParent,
-                        admin: user.isAdmin
+                        admin: user.isAdmin,
+                        familyId: user.familyId
                     }))
                     navigate("/")
                 }
@@ -35,7 +35,7 @@ export const Login = () => {
         <main className="container--login">
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Welcome</h1>
+                    <h1>Login</h1>
                     <img src="src/auth/images/Help!.png" alt="Help!" /> 
                     <fieldset>
                         <label htmlFor="inputEmail">Email address</label>
@@ -48,7 +48,7 @@ export const Login = () => {
                             required autoFocus/>
                     </fieldset>
                     <fieldset>
-                        <label htmlFor="inputPassword">Password</label>
+                        <label htmlFor="inputPassword">Family Password</label>
                         <input
                             type="password"
                             value={password}
