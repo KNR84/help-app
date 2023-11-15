@@ -2,15 +2,23 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
 
+
+
 export const Register = (props) => {
     const [user, setUser] = useState({
         userName: "",
         email: "",
         password: "",
         isAdmin: true,
-        familyId: ""                                     
+        familyId: crypto.randomUUID()                                     
     })
     let navigate = useNavigate()
+
+
+
+
+
+
     const registerNewUser = () => {                                       
         return fetch("http://localhost:8088/users", {
             method: "POST",
