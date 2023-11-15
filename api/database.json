@@ -63,38 +63,6 @@
       "isAdmin": false,
       "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
       "id": 7
-    },
-    {
-      "userName": "Test Name",
-      "email": "test@me.com",
-      "password": "123",
-      "isAdmin": true,
-      "familyId": "",
-      "id": 8
-    },
-    {
-      "userName": "New Family Member",
-      "email": "new@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 9
-    },
-    {
-      "userName": "another user",
-      "email": "new2@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "",
-      "id": 10
-    },
-    {
-      "userName": "Test Crypto",
-      "email": "testit@me.com",
-      "password": "123",
-      "isAdmin": true,
-      "familyId": "10eaff93-4f57-4a7e-8543-870672a5b942",
-      "id": 11
     }
   ],
   "alerts": [
@@ -102,29 +70,67 @@
       "id": 1,
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
       "createdBy": "Kari",
-      "alertTypeId": 1,
+      "alertTypesId": 1,
       "alertDateTime": "Fri Apr 29 2022 14:02:20 GMT-0500 (Central Daylight Time)"
     },
     {
-      "id": 3,
+      "id": 2,
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
       "createdBy": "Scotty",
-      "alertTypeId": 2,
+      "alertTypesId": 2,
       "alertDateTime": "Sat Apr 30 2022 14:02:20 GMT-0500 (Central Daylight Time)"
     },
     {
-      "id": 4,
+      "id": 3,
       "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
       "createdBy": "Steve",
-      "alertTypeId": 2,
+      "alertTypesId": 2,
       "alertDateTime": "Sat Apr 28 2022 14:02:20 GMT-0500 (Central Daylight Time)"
     },
     {
       "id": 4,
       "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
       "createdBy": "Titus",
-      "alertTypeId": 1,
+      "alertTypesId": 1,
       "alertDateTime": "Sat Apr 27 2022 14:02:20 GMT-0500 (Central Daylight Time)"
+    },
+    {
+      "createdBy": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "Fri Apr 29 2022 14:02:20 GMT-0500 (Central Daylight Time)",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "userName": "help!!!!",
+      "id": 5
+    },
+    {
+      "createdBy": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "Fri Apr 29 2022 14:02:20 GMT-0500 (Central Daylight Time)",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "userName": "This is working, for now. I am gonna break it.",
+      "id": 6
+    }
+  ],
+  "alertTypes": [
+    {
+      "id": 1,
+      "alertText": "Come get me"
+    },
+    {
+      "id": 2,
+      "alertText": "Forgot my homework"
+    },
+    {
+      "id": 3,
+      "alertText": "I am sick"
+    },
+    {
+      "id": 4,
+      "alertText": "Practice after school"
+    },
+    {
+      "id": 5,
+      "alertText": "Medical emergency"
     }
   ]
 }

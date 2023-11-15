@@ -2,6 +2,9 @@
 import { Outlet, Route, Routes } from "react-router-dom"
 import { UserList } from "../../admin/UserList"
 import { AddNewUser } from "../../admin/AddNewUser"
+import { AlertList } from "../../alerts/AlertList"
+import { AddNewAlert } from "../../alerts/AddNewAlert"
+
 
 
 
@@ -20,8 +23,10 @@ export const AdminView = () => {
                 </>
             }>
 
-                <Route path="UserList" element={ <UserList/>} />  
+                <Route path="UserList" element={ <UserList/>} /> 
+                <Route path="AlertList" element={ <AlertList/>} />   
                 <Route path="AddNewUser" element={ <AddNewUser/>} />  
+                <Route path="AddNewAlert" element={ <AddNewAlert/>} />  
                 
                 
             </Route>
