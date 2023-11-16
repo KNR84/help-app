@@ -6,7 +6,6 @@ import { User } from "./User";
 export const UserList = () => {
     const [users, setUsers] = useState([])
 
-
     const localhelpAppUser = localStorage.getItem("helpApp_user")
     const helpAppUserObject = JSON.parse(localhelpAppUser)
 
@@ -25,14 +24,11 @@ export const UserList = () => {
         return (
             <article className="users">
               
-              
               <Link to="/addNewUser"> 
                 <button>Add User</button>
               </Link>
 
-
-              
-              {users.map(user => (
+                {users.map(user => (
                 <User
                   key={`user--${user.id}`}
                   id={user.id}

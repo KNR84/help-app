@@ -30,7 +30,7 @@ export const Register = (props) => {
             .then(res => res.json())
             .then(createdUser => {
                 if (createdUser.hasOwnProperty("id")) {
-                    localStorage.setItem("honey_user", JSON.stringify({
+                    localStorage.setItem("helpApp_user", JSON.stringify({ //changed this
                         id: createdUser.id,
                         userName: "",
                         email: "",

@@ -41,8 +41,11 @@ export const AddNewAlert = (props) => {
             body: JSON.stringify(alert)
         })
             .then(res => res.json())
+            
+            
 
     }
+    
 
     const addAlertType = (event) => {
         const newAlertObject = {
@@ -53,43 +56,34 @@ export const AddNewAlert = (props) => {
         }
         setAlert(newAlertObject)
     }
-
+    
 
     //function updates the user state as the user types in the form fields. It creates a copy of the current state - modidifies it with the new information inputed by the user and then sets the state with the updated copy. 
     const updateAlert = (evt) => {
         const copy = { ...alert }
         copy[evt.target.id] = evt.target.value
         setAlert(copy)
+       
     }
+   
 
     //this is the render method of the component. It returns the JSX that represents the form with input fields for new alerts.
     return (
         <main style={{ textAlign: "center" }}>
             <form className="form--login">
-                <h1 className="h3 mb-3 font-weight-normal">Add new alert</h1>
+                <h1 className="h3 mb-3 font-weight-normal">Add new alert page</h1>
 
                 <fieldset>
-
-
-                    <label>Choose a car:</label>
                     <select onChange={addAlertType} name="alertTypes" id="alertTypes">
-
-                        <option value="0">Select an alert</option>
+                    <option value="0">Select an alert</option>
                         {alertTypes.map(aType => {
                             return <option key={aType.id} value={aType.id}>{aType.alertText}</option>
                         })}
                     </select>
-
                 </fieldset>
 
-
-
-
-
-
-
                 <fieldset>
-                    <button onClick={addNewAlert} type="submit"> Submit new alert </button>
+                    <button onClick={addNewAlert} type="submit"> Submit </button>
                 </fieldset>
             </form>
         </main>

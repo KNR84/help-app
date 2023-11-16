@@ -26,13 +26,7 @@ export const HelpApp = () => {
       </Authorized>
     } />
 
-
-
-
-
-
-
-  </Routes>
+</Routes>
   );
 }
 

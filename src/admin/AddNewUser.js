@@ -30,17 +30,7 @@ export const AddNewUser = (props) => {
         })
             .then(res => res.json())
             .then(createdUser => {
-                if (createdUser.hasOwnProperty("id")) {
-                    localStorage.setItem("helpApp_user", JSON.stringify({
-                        id: createdUser.id,
-                        userName: "",
-                        email: "",
-                        password: "",
-                        admin: createdUser.isAdmin,
-                        familyId: ""
-                    }))
-                    navigate("/")
-                }
+                navigate("/UserList")
             })
     }
 
