@@ -36,7 +36,7 @@ export const AlertList = () => {
                 <Alert
                   key={`alert--${alert.id}`}
                   id={alert.id}
-                  createdBy={alert.createdBy}
+                  userId={alert.userId}
                   alertTypesId={alert.alertTypesId}
                   alertDateTime={alert.alertDateTime}
                   familyId={helpAppUserObject.familyId}

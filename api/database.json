@@ -66,49 +66,47 @@
     }
   ],
   "alerts": [
-    {
-      "id": 1,
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "createdBy": "Kari",
+   {
+      "userId": 1,
       "alertTypesId": 1,
-      "alertDateTime": "Fri Apr 29 2022 14:02:20 GMT-0500 (Central Daylight Time)"
-    },
-    {
-      "id": 2,
+      "alertDateTime": "2023-11-16T15:59:08.695Z",
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "createdBy": "Scotty",
-      "alertTypesId": 2,
-      "alertDateTime": "Sat Apr 30 2022 14:02:20 GMT-0500 (Central Daylight Time)"
+      "id": 9
     },
     {
-      "id": 3,
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "createdBy": "Steve",
-      "alertTypesId": 2,
-      "alertDateTime": "Sat Apr 28 2022 14:02:20 GMT-0500 (Central Daylight Time)"
-    },
-    {
-      "id": 4,
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "createdBy": "Titus",
+      "userId": 1,
       "alertTypesId": 1,
-      "alertDateTime": "Sat Apr 27 2022 14:02:20 GMT-0500 (Central Daylight Time)"
-    },
-    {
-      "createdBy": 1,
-      "alertTypesId": 1,
-      "alertDateTime": "Fri Apr 29 2022 14:02:20 GMT-0500 (Central Daylight Time)",
+      "alertDateTime": "2023-11-16T15:59:08.695Z",
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "userName": "help!!!!",
-      "id": 5
+      "id": 10
     },
     {
-      "createdBy": 1,
+      "userId": 1,
       "alertTypesId": 1,
-      "alertDateTime": "Fri Apr 29 2022 14:02:20 GMT-0500 (Central Daylight Time)",
+      "alertDateTime": "2023-11-16T15:59:08.695Z",
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "userName": "This is working, for now. I am gonna break it.",
-      "id": 6
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "alertTypesId": "1",
+      "alertDateTime": "2023-11-16T15:57:01.489Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "alertTypesId": "2",
+      "alertDateTime": "2023-11-16T15:57:59.349Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 5,
+      "alertDateTime": "2023-11-16T15:59:08.695Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 14
     }
   ],
   "alertTypes": [
