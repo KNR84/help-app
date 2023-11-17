@@ -5,7 +5,9 @@ import { AddNewUser } from "../../admin/AddNewUser"
 
 import { AddNewAlert } from "../../alerts/AddNewAlert"
 import { AlertList } from "../../alerts/AlertList"
-import { AddNewMessage } from "../../messages/AddNewMessage"
+import { MessageForm } from "../../messages/MessageForm"
+import { MessageEdit } from "../../messages/MessageEdit"
+import { MessageList } from "../../messages/MessageList"
 
 
 
@@ -13,7 +15,8 @@ import { AddNewMessage } from "../../messages/AddNewMessage"
 
 
 
-//renders the ticket list to the webpage using the Route function. 
+
+
 export const AdminView = () => {
 	return (
         <Routes>
@@ -28,8 +31,11 @@ export const AdminView = () => {
                 <Route path="UserList" element={ <UserList/>} /> 
                 <Route path="AlertList" element={ <AlertList/>} />   
                 <Route path="AddNewUser" element={ <AddNewUser/>} />  
-                <Route path="AddNewAlert" element={ <AddNewAlert/>} />  
-                <Route path="AddNewMessage" element={ <AddNewMessage/>} />  
+                <Route path="AddNewAlert" element={ <AddNewAlert/>} /> 
+                <Route path="MessageForm" element={ <MessageForm/>} /> 
+                <Route path="MessageEdit" element={ <MessageEdit/>} /> 
+                <Route path="MessageList" element={ <MessageList/>} />         
+               
                 
                 
             </Route>

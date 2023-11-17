@@ -17,7 +17,7 @@ export const AddNewAlert = (props) => {
     const [alert, setAlert] = useState({
         userId: helpAppUserObject.id,
         alertTypesId: 0,
-        alertDateTime: "Fri Apr 29 2022 14:02:20 GMT-0500 (Central Daylight Time)",
+        alertDateTime: "2023-11-17T15:03:12.618Z",
         familyId: helpAppUserObject.familyId
     })
 

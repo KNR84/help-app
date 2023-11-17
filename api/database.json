@@ -74,44 +74,19 @@
     },
     {
       "userName": "Grandma",
-      "userId": 9,
-      "email": "gma@me.com",
+      "email": "grandma@me.com",
       "password": "123",
       "isAdmin": false,
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
       "id": 8
     },
     {
-      "userName": "Papaw",
-      "email": "papaw@me.com",
+      "userName": "Bob",
+      "email": "bob@me.com",
       "password": "123",
       "isAdmin": false,
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
       "id": 9
-    },
-    {
-      "userName": "Grandma Karen",
-      "email": "gkaren@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 10
-    },
-    {
-      "userName": "test",
-      "email": "test@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 11
-    },
-    {
-      "userName": "testagain",
-      "email": "again@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 12
     }
   ],
   "alerts": [
@@ -184,6 +159,34 @@
       "alertDateTime": "2023-11-16T20:22:46.353Z",
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
       "id": 18
+    },
+    {
+      "userId": 13,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-17T14:07:20.719Z",
+      "familyId": "",
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 4,
+      "alertDateTime": "2023-11-17T14:10:55.241Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 20
+    },
+    {
+      "userId": 4,
+      "alertTypesId": 5,
+      "alertDateTime": "2023-11-17T15:01:22.512Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
+      "id": 21
+    },
+    {
+      "userId": 9,
+      "alertTypesId": 2,
+      "alertDateTime": "2023-11-17T15:03:12.618Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
+      "id": 22
     }
   ],
   "alertTypes": [
@@ -206,6 +209,24 @@
     {
       "id": 5,
       "alertText": "Medical emergency"
+    }
+  ],
+  "messages": [
+    {
+      "userId": 1,
+      "userName": "Kari",
+      "alertDateTime": "2023-11-17T15:03:12.618Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "This message is from Kari",
+      "id": 4
+    },
+    {
+      "userId": 5,
+      "userName": "",
+      "alertDateTime": "2023-11-17T15:03:12.618Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
+      "msg": "This message is from Titus",
+      "id": 5
     }
   ]
 }
