@@ -12,3 +12,17 @@
 .navbar__logout {
     margin-left: auto;
 }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: red;
+    z-index: 1000; /* Set a high z-index to ensure it appears above other elements */
+    /* Add any other styling you want for your navbar */
+  }
+  
+  /* Add styling for the navigation links, logo, etc. */
+  

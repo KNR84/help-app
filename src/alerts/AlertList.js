@@ -12,7 +12,7 @@ export const AlertList = () => {
 
     useEffect(
         () => {
-            fetch('http://localhost:8088/alerts')
+            fetch('http://localhost:8088/alerts?_expand=alertTypes')
                 .then(response => response.json())
                 .then((alertArray) => {
                     // Filter alerts based on familyId
@@ -40,6 +40,7 @@ export const AlertList = () => {
                   alertTypesId={alert.alertTypesId}
                   alertDateTime={alert.alertDateTime}
                   familyId={helpAppUserObject.familyId}
+                  alertText={alert.alertTypes.alertText}
                 />
               ))}
             </article>

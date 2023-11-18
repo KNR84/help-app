@@ -27,7 +27,7 @@ export const MessageForm = () => {
 
         const messageToSendToAPI = {
             userId: helpAppUserObject.id,
-            userName: "",
+            userName: helpAppUserObject.userName,
             alertDateTime: "2023-11-17T15:03:12.618Z",
             familyId: helpAppUserObject.familyId,
             msg: messageState.msg,

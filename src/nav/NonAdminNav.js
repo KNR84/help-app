@@ -20,7 +20,7 @@ export const NonAdminNav = () => {
                 <Link className="navbar__link" to="/AlertList">Alert List</Link>
             </li>
             <li className="navbar__item active">
-                <Link className="navbar__link" to="/AddNewMessage">Add Message</Link>
+                <Link className="navbar__link" to="/MessageForm">Add Message</Link>
             </li>
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/MessageList">Message List</Link>

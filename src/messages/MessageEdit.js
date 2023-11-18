@@ -48,7 +48,7 @@ export const MessageEdit = () => {
        
         const messageToSendToAPI = {
             userId: helpAppUserObject.id,
-            userName: "Kari",
+            userName: helpAppUserObject.userName,
             alertDateTime: "2023-11-17T15:03:12.618Z",
             familyId: helpAppUserObject.familyId,
             msg: editedMessage

@@ -187,6 +187,20 @@
       "alertDateTime": "2023-11-17T15:03:12.618Z",
       "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
       "id": 22
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-18T17:56:48.001Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 23
+    },
+    {
+      "userId": 4,
+      "alertTypesId": 3,
+      "alertDateTime": "2023-11-18T18:09:18.953Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
+      "id": 24
     }
   ],
   "alertTypes": [
@@ -214,18 +228,37 @@
   "messages": [
     {
       "userId": 1,
-      "userName": "Kari",
       "alertDateTime": "2023-11-17T15:03:12.618Z",
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "This message is from Kari",
+      "msg": "A new message from Kari",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "alertDateTime": "2023-11-17T15:03:12.618Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "help me",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "alertDateTime": "2023-11-17T15:03:12.618Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "Hello!",
+      "id": 3
+    },
+    {
+      "userId": 4,
+      "alertDateTime": "2023-11-17T15:03:12.618Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
+      "msg": "this is still ateve",
       "id": 4
     },
     {
-      "userId": 5,
-      "userName": "",
+      "userId": 1,
       "alertDateTime": "2023-11-17T15:03:12.618Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "msg": "This message is from Titus",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "hello",
       "id": 5
     }
   ]
