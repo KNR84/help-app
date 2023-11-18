@@ -16,15 +16,11 @@ export const NonAdminNav = () => {
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/AddNewAlert">Add Alert</Link>
             </li>
-            <li className="navbar__item active">
-                <Link className="navbar__link" to="/AlertList">Alert List</Link>
-            </li>
+            
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/MessageForm">Add Message</Link>
             </li>
-            <li className="navbar__item active">
-                <Link className="navbar__link" to="/MessageList">Message List</Link>
-            </li>
+           
             {
                 localStorage.getItem("helpApp_user")
                     ? <li className="navbar__item navbar__logout">

@@ -3,6 +3,7 @@ import "./Message.css"
 import { MessageEdit } from "./MessageEdit"
 
 
+
 //defines the react functional component MessageList
 export const MessageList = () => {
 
@@ -38,6 +39,7 @@ export const MessageList = () => {
  <fieldset>
         <h2>List of Messages</h2>
         <MessageEdit />
+        
         </fieldset>
     </>
     

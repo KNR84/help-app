@@ -4,7 +4,7 @@ import { AddNewAlert } from "../../alerts/AddNewAlert"
 import { AlertList } from "../../alerts/AlertList"
 import { MessageForm } from "../../messages/MessageForm"
 import { MessageEdit } from "../../messages/MessageEdit"
-import { MessageList } from "../../messages/MessageList"
+
 
 
 
@@ -25,7 +25,7 @@ export const NonAdminView = () => {
                 <Route path="AddNewAlert" element={<AddNewAlert />} />
                 <Route path="MessageForm" element={ <MessageForm/>} />  
                 <Route path="MessageEdit" element={ <MessageEdit/>} /> 
-                <Route path="MessageList" element={ <MessageList/>} />   
+               
                 
               
 

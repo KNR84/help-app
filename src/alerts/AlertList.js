@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { Alert } from "./Alert";
 
 //set up intial state and fetch all alerts from the API 
@@ -24,19 +23,12 @@ export const AlertList = () => {
 
         return (
             <article className="alerts">
-              
-              
-              <Link to="/addNewAlert"> 
-                <button>Add Alert</button>
-              </Link>
-
-
-              
-              {alerts.map(alert => (
+               {alerts.map(alert => (
                 <Alert
                   key={`alert--${alert.id}`}
                   id={alert.id}
                   userId={alert.userId}
+                  userName={alert.userName}
                   alertTypesId={alert.alertTypesId}
                   alertDateTime={alert.alertDateTime}
                   familyId={helpAppUserObject.familyId}

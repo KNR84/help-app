@@ -11,4 +11,38 @@ body {
  .navbar__link{
   color: white;
  }
- html {background-color: black}
+ html {background-color: black
+}
+.messageForm {
+  color:white
+ }
+ 
+ /* MessageEdit.css */
+
+/* MessageEdit.css */
+
+.chat-area {
+  display: flex;
+  flex-direction: column; /* Messages are stacked vertically */
+  background-color: white;
+  color: black
+}
+
+.message-container {
+  display: flex;
+  align-items: center; /* Align items (message and button) vertically in each container */
+  margin-bottom: 10px; /* Add margin between messages */
+}
+
+.message-container p {
+  margin-right: 10px; /* Add margin to separate the message and button */
+}
+
+.custom-dropdown {
+  width: 50%; /* Adjust the width as needed */
+  padding: 10px; /* Adjust the padding as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  /* Add any other styles you want to customize */
+}
+
+

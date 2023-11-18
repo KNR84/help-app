@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
+import { AlertList } from "./AlertList"
+
 
 
 export const AddNewAlert = (props) => {
@@ -17,8 +19,9 @@ export const AddNewAlert = (props) => {
     const [alert, setAlert] = useState({
         userId: helpAppUserObject.id,
         alertTypesId: 0,
-        alertDateTime: "2023-11-17T15:03:12.618Z",
-        familyId: helpAppUserObject.familyId
+        alertDateTime: new Date(),
+        familyId: helpAppUserObject.familyId,
+        userName: helpAppUserObject.userName,
     })
 
     useEffect(
@@ -52,7 +55,8 @@ export const AddNewAlert = (props) => {
             userId: helpAppUserObject.id,
             alertTypesId: +event.target.value,
             alertDateTime: new Date(),
-            familyId: helpAppUserObject.familyId
+            familyId: helpAppUserObject.familyId,
+            userName: helpAppUserObject.userName,
         }
         setAlert(newAlertObject)
     }
@@ -69,26 +73,33 @@ export const AddNewAlert = (props) => {
 
     //this is the render method of the component. It returns the JSX that represents the form with input fields for new alerts.
     return (
-        <main style={{ textAlign: "center" }}>
-            <form className="form--login">
-                <h1 className="h3 mb-3 font-weight-normal">Add new alert page</h1>
+        <form className="messageForm">
+          <h1 className="h3 mb-3 font-weight-normal">Alerts</h1>
+      
+          <div className="messageForm">
+          <select className="custom-dropdown" onChange={addAlertType} name="alertTypes" id="alertTypes">
+              <option value="0">Select an alert</option>
+              {alertTypes.map((aType) => (
+                <option key={aType.id} value={aType.id}>
+                  {aType.alertText}
+                  
+                </option>
+                
+              ))}
+            </select>
+          </div>
+      
+          <fieldset>
+            <button onClick={addNewAlert} type="submit">
+              Submit
+            </button>
+          </fieldset>
+      
+          <div className="chat-area">
+            <br></br>
+            <AlertList />
+          </div>
+        </form>
+      );
 
-                <fieldset>
-                    <select onChange={addAlertType} name="alertTypes" id="alertTypes">
-                    <option value="0">Select an alert</option>
-                        {alertTypes.map(aType => {
-                            return <option key={aType.id} value={aType.id}>{aType.alertText}</option>
-                        })}
-                    </select>
-                </fieldset>
-
-                <fieldset>
-                    <button onClick={addNewAlert} type="submit"> Submit </button>
-                </fieldset>
-            </form>
-        </main>
-    )
-}
-
-
-
+              }

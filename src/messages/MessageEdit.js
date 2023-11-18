@@ -49,7 +49,7 @@ export const MessageEdit = () => {
         const messageToSendToAPI = {
             userId: helpAppUserObject.id,
             userName: helpAppUserObject.userName,
-            alertDateTime: "2023-11-17T15:03:12.618Z",
+            alertDateTime: new Date().toISOString(), // Use current date and time
             familyId: helpAppUserObject.familyId,
             msg: editedMessage
         }
@@ -75,26 +75,33 @@ export const MessageEdit = () => {
 
 
     return (
-        <>
-            {messages.map((message) => (
-                <div key={message.id}>
-                    {editMessageId === message.id ? (
-                        <>
-                            <input
-                                type="text"
-                                value={editedMessage}
-                                onChange={(e) => setEditedMessage(e.target.value)}
-                            />
-                            <button onClick={() => handleSaveEdit(message.id)}>Save</button>
-                        </>
-                    ) : (
-                        <>
-                            <p>{message.msg}</p>
-                            <button onClick={() => handleEditClick(message.id)}>Edit Me</button>
-                        </>
-                    )}
-                </div>
-            ))}
-        </>
-    );
-};
+        <div className="chat-area">
+          {messages.map((message) => (
+            <div key={message.id} className="message-container">
+              {editMessageId === message.id ? (
+                <>
+                  <input
+                    type="text"
+                    value={editedMessage}
+                    onChange={(e) => setEditedMessage(e.target.value)}
+                  />
+                  <button onClick={() => handleSaveEdit(message.id)}>Save</button>
+                </>
+              ) : (
+                <>
+                <p>
+              <strong>{message.user.userName}: </strong>
+              {message.msg}
+            </p>
+            
+            <p>
+                            <em>{new Date(message.alertDateTime).toLocaleString()}</em>
+                        </p>
+                  <button onClick={() => handleEditClick(message.id)}>Edit message</button>
+                </>
+              )}
+            </div>
+          ))}
+        </div>
+      );
+    };

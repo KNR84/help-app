@@ -1,5 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
+import { MessageEdit } from "./MessageEdit";
+
 
 export const MessageForm = () => {
 
@@ -13,7 +15,7 @@ export const MessageForm = () => {
         userId: "",
         userName: "",
         alertTypesId: 0,
-        alertDateTime: "2023-11-17T15:03:12.618Z",
+        alertDateTime: new Date(),
         familyId: helpAppUserObject.familyId,
         msg: ""
     })
@@ -28,7 +30,7 @@ export const MessageForm = () => {
         const messageToSendToAPI = {
             userId: helpAppUserObject.id,
             userName: helpAppUserObject.userName,
-            alertDateTime: "2023-11-17T15:03:12.618Z",
+            alertDateTime: new Date(),
             familyId: helpAppUserObject.familyId,
             msg: messageState.msg,
         }
@@ -37,22 +39,23 @@ export const MessageForm = () => {
 
 
 
-        // TODO: Perform the fetch() to POST the object to the API
-        return fetch(`http://localhost:8088/messages?_expand=user`, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(messageToSendToAPI)
-        })
-            .then(response => {
-                if (response.ok) {
-                    navigate("/MessageList")
-                } else {
-                    // Handle errors from the API if necessary
-                    console.error('Error:', response.status);
-                }
-            })
+     // TODO: Perform the fetch() to POST the object to the API
+return fetch(`http://localhost:8088/messages?_expand=user`, {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(messageToSendToAPI)
+})
+    .then(response => {
+        if (response.ok) {
+            // Refresh the page after successful POST
+            window.location.reload();
+        } else {
+            // Handle errors from the API if necessary
+            console.error('Error:', response.status);
+        }
+    });
             
     };
 
@@ -79,12 +82,21 @@ export const MessageForm = () => {
                         } />
                 </div>
             </fieldset>
+            
 
             <button
                 onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
                 className="btn btn-primary">
                 Save Message
             </button>
+            
+            <div>
+                <br></br>
+                <MessageEdit />
+            </div>
+            
         </form>
+        
     )
 }
+

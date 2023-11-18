@@ -28,15 +28,6 @@
       "id": 3
     },
     {
-      "userName": "Steve",
-      "userId": 4,
-      "email": "steve@me.com",
-      "password": "123",
-      "isAdmin": true,
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 4
-    },
-    {
       "userName": "Sarah",
       "userId": 5,
       "email": "sarah@me.com",
@@ -44,49 +35,6 @@
       "isAdmin": false,
       "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
       "id": 4
-    },
-    {
-      "userName": "Titus",
-      "userId": 6,
-      "email": "titus@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 5
-    },
-    {
-      "userName": "Jonas",
-      "userId": 7,
-      "email": "jonas@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 6
-    },
-    {
-      "userName": "Emmett",
-      "userId": 8,
-      "email": "emmett@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 7
-    },
-    {
-      "userName": "Grandma",
-      "email": "grandma@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 8
-    },
-    {
-      "userName": "Bob",
-      "email": "bob@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 9
     }
   ],
   "alerts": [
@@ -96,111 +44,6 @@
       "alertDateTime": "2023-11-16T15:59:08.695Z",
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
       "id": 9
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 1,
-      "alertDateTime": "2023-11-16T15:59:08.695Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 10
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 1,
-      "alertDateTime": "2023-11-16T15:59:08.695Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 11
-    },
-    {
-      "userId": 1,
-      "alertTypesId": "1",
-      "alertDateTime": "2023-11-16T15:57:01.489Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 12
-    },
-    {
-      "userId": 1,
-      "alertTypesId": "2",
-      "alertDateTime": "2023-11-16T15:57:59.349Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 13
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 5,
-      "alertDateTime": "2023-11-16T15:59:08.695Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 14
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 2,
-      "alertDateTime": "2023-11-16T16:38:59.702Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 15
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 1,
-      "alertDateTime": "2023-11-16T16:51:44.672Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 16
-    },
-    {
-      "userId": 4,
-      "alertTypesId": 3,
-      "alertDateTime": "2023-11-16T20:05:15.318Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 17
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 2,
-      "alertDateTime": "2023-11-16T20:22:46.353Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 18
-    },
-    {
-      "userId": 13,
-      "alertTypesId": 1,
-      "alertDateTime": "2023-11-17T14:07:20.719Z",
-      "familyId": "",
-      "id": 19
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 4,
-      "alertDateTime": "2023-11-17T14:10:55.241Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 20
-    },
-    {
-      "userId": 4,
-      "alertTypesId": 5,
-      "alertDateTime": "2023-11-17T15:01:22.512Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 21
-    },
-    {
-      "userId": 9,
-      "alertTypesId": 2,
-      "alertDateTime": "2023-11-17T15:03:12.618Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 22
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 1,
-      "alertDateTime": "2023-11-18T17:56:48.001Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 23
-    },
-    {
-      "userId": 4,
-      "alertTypesId": 3,
-      "alertDateTime": "2023-11-18T18:09:18.953Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 24
     }
   ],
   "alertTypes": [
@@ -228,38 +71,52 @@
   "messages": [
     {
       "userId": 1,
-      "alertDateTime": "2023-11-17T15:03:12.618Z",
+      "alertDateTime": "2023-11-18T22:17:34.156Z",
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "A new message from Kari",
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "alertDateTime": "2023-11-17T15:03:12.618Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "help me",
+      "msg": "Back in action!",
       "id": 2
     },
     {
-      "userId": 1,
-      "alertDateTime": "2023-11-17T15:03:12.618Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "Hello!",
+      "userId": 4,
+      "alertDateTime": "2023-11-18T22:00:47.665Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
+      "msg": "Hello Kari",
       "id": 3
     },
     {
-      "userId": 4,
-      "alertDateTime": "2023-11-17T15:03:12.618Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "msg": "this is still ateve",
+      "userId": 1,
+      "alertDateTime": "2023-11-18T22:00:52.411Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "Hi Steve",
       "id": 4
     },
     {
-      "userId": 1,
-      "alertDateTime": "2023-11-17T15:03:12.618Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "hello",
+      "userId": 4,
+      "alertDateTime": "2023-11-18T22:01:00.865Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
+      "msg": "this is cool",
       "id": 5
+    },
+    {
+      "userId": 1,
+      "alertDateTime": "2023-11-18T22:05:48.178Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "a new message!",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "alertDateTime": "2023-11-18T22:05:49.618Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "a new message!",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "alertDateTime": "2023-11-18T22:05:49.986Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "a new message!",
+      "id": 8
     }
   ]
 }
