@@ -27,6 +27,21 @@ export const MessageEdit = () => {
                 setMessages(messageArray);
             });
     }
+//////////////////////////////////////////////////////////////////////
+    useEffect(() => {
+        // Fetch messages from the API endpoint initially
+        getAllMessages();
+    
+        // Set up an interval to fetch messages every 60 seconds (adjust as needed)
+        const intervalId = setInterval(() => {
+          getAllMessages();
+        }, 1000);
+    
+        // Clear the interval when the component is unmounted
+        return () => clearInterval(intervalId);
+      }, []);
+//////////////////////////////////////////////////////
+    
 
     const handleEditClick = (messageId) => {
       const selectedMessage = messages.find((message) => message.id === messageId);

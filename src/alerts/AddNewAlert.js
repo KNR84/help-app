@@ -36,7 +36,7 @@ export const AddNewAlert = (props) => {
     )
     //processes and posts the data to the database
     const addNewAlert = () => {
-        return fetch("http://localhost:8088/alerts?_expand=users/", {
+        return fetch("http://localhost:8088/alerts?_expand=users", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -57,6 +57,7 @@ export const AddNewAlert = (props) => {
             alertDateTime: new Date(),
             familyId: helpAppUserObject.familyId,
             userName: helpAppUserObject.userName,
+            alertText: helpAppUserObject.alertText
         }
         setAlert(newAlertObject)
     }
@@ -75,6 +76,10 @@ export const AddNewAlert = (props) => {
     return (
         <form className="messageForm">
           <h1 className="h3 mb-3 font-weight-normal">Alerts</h1>
+
+
+         
+
       
           <div className="messageForm">
           <select className="custom-dropdown" onChange={addAlertType} name="alertTypes" id="alertTypes">
