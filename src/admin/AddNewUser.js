@@ -82,7 +82,7 @@ export const AddNewUser = (props) => {
                         placeholder="user password" required />
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Register New User </button>
+                <button className="button">Register User</button>
                 </fieldset>
             </form>
         </main>

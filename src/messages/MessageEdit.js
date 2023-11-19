@@ -29,12 +29,18 @@ export const MessageEdit = () => {
     }
 
     const handleEditClick = (messageId) => {
-        const selectedMessage = messages.find((message) => message.id === messageId);
-        if (selectedMessage) {
-            setEditedMessage(selectedMessage.msg);
-            setEditMessageId(messageId);
-        }
-    };
+      const selectedMessage = messages.find((message) => message.id === messageId);
+  
+      // Check if the logged-in user is the author of the message
+      if (selectedMessage.user.userId === helpAppUserObject.id) {
+          setEditedMessage(selectedMessage.msg);
+          setEditMessageId(messageId);
+      } else {
+          // Optionally, you can provide some feedback to the user that they can't edit this message.
+          alert("You are not the author of this message and cannot edit it.");
+      }
+  };
+  
 
     const handleSaveEdit = (messageId) => {
         // Update the message with the edited text
@@ -75,33 +81,37 @@ export const MessageEdit = () => {
 
 
     return (
-        <div className="chat-area">
+      <div className="chat-area">
           {messages.map((message) => (
-            <div key={message.id} className="message-container">
-              {editMessageId === message.id ? (
-                <>
-                  <input
-                    type="text"
-                    value={editedMessage}
-                    onChange={(e) => setEditedMessage(e.target.value)}
-                  />
-                  <button onClick={() => handleSaveEdit(message.id)}>Save</button>
-                </>
-              ) : (
-                <>
-                <p>
-              <strong>{message.user.userName}: </strong>
-              {message.msg}
-            </p>
-            
-            <p>
-                            <em>{new Date(message.alertDateTime).toLocaleString()}</em>
-                        </p>
-                  <button onClick={() => handleEditClick(message.id)}>Edit message</button>
-                </>
-              )}
-            </div>
+              <div key={message.id} className="message-container">
+                  {editMessageId === message.id ? (
+                      <>
+                          <input
+                              type="text"
+                              value={editedMessage}
+                              onChange={(e) => setEditedMessage(e.target.value)}
+                          />
+                          <button onClick={() => handleSaveEdit(message.id)}>Save</button>
+                      </>
+                  ) : (
+                      <>
+                          <p>
+                              <strong>{message.user.userName}: </strong>
+                              {message.msg}
+                          </p>
+  
+                          <p>
+                              <em>{new Date(message.alertDateTime).toLocaleString()}</em>
+                          </p>
+  
+                          {message.user.userId === helpAppUserObject.id && (
+                              <button onClick={() => handleEditClick(message.id)}>Edit</button>
+                          )}
+                      </>
+                  )}
+              </div>
           ))}
-        </div>
-      );
-    };
+      </div>
+  );
+}
+  

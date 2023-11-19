@@ -85,10 +85,12 @@ return fetch(`http://localhost:8088/messages?_expand=user`, {
             
 
             <button
-                onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
-                className="btn btn-primary">
-                Save Message
-            </button>
+  onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
+  className="btn btn-primary button"
+>
+  Save Message
+</button>
+
             
             <div>
                 <br></br>

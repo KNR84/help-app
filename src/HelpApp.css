@@ -1,6 +1,7 @@
 
 body {
-  background-color: #000; /* Black background */
+  background-color: black
+ 
  }
  .form--login{
   background-color: black;
@@ -25,13 +26,18 @@ body {
   display: flex;
   flex-direction: column; /* Messages are stacked vertically */
   background-color: white;
-  color: black
+  color: black;
+  border: 1cap solid red; /* Add a 1px solid border with a light gray color */
+  padding: 10px; /* Optional: Add some padding to the chat area */
 }
 
 .message-container {
   display: flex;
   align-items: center; /* Align items (message and button) vertically in each container */
   margin-bottom: 10px; /* Add margin between messages */
+   border: 1px solid #ccc; /* Border for each message */
+  padding: 8px; /* Optional: Add some padding to each message */
+  margin-bottom: 5px; /* Optional: Add some space between messages */
 }
 
 .message-container p {
@@ -45,4 +51,71 @@ body {
   /* Add any other styles you want to customize */
 }
 
+/* src/components/Header.css */
 
+.logo {
+  width: 100px; /* Adjust the width and height according to your needs */
+  height: 100px;
+}
+
+.logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  background-color: black;
+ }
+
+.logo {
+  width: 600px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+h2 {
+  color: white; /* Change the text color to blue */
+  font-size: 24px; /* Change the font size to 24 pixels */
+  font-weight: bold; /* Make the text bold */
+  /* Add any other styles you want to modify */
+}
+
+h3 {
+  color: white; /* Change the text color to blue */
+  font-size: 24px; /* Change the font size to 24 pixels */
+  font-weight: bold; /* Make the text bold */
+  /* Add any other styles you want to modify */
+  background-color: red;
+  padding: 10px;
+  width: 100%; /* Make the background color extend the entire width */
+  text-align: center; /* Center the text horizontally */
+  
+}
+
+.logo-button {
+  background: none;
+ }
+
+ .alerts {
+  border: 1px solid #ccc; /* Border for each message */
+  padding: 10px; /* Optional: Add some padding to the alert */
+  margin-bottom: 10px; /* Optional: Add some space between alerts */
+  color: black; /* Set the text color to white */
+  background-color: white; /* Set the background color to black */
+}
+
+
+.button {
+  background-color: red; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex; /* Use inline-flex instead of inline-block */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}

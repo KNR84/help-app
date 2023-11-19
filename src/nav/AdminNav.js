@@ -9,7 +9,10 @@ export const AdminNav = () => {
 
     return (
         <ul className="navbar">
-
+            
+             <li className="navbar__item active">
+                <Link className="navbar__link" to="/">Home</Link>
+            </li>
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/AddNewUser">Add a new user</Link>
             </li>
@@ -19,14 +22,11 @@ export const AdminNav = () => {
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/AddNewAlert">Add Alert</Link>
             </li>
-           
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/MessageForm">Add Message</Link>
             </li>
           
-            <li className="navbar__item active">
-                <Link className="navbar__link" to="/">This is home</Link>
-            </li>
+           
             {
                 localStorage.getItem("helpApp_user")
                     ? <li className="navbar__item navbar__logout">

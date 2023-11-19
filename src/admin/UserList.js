@@ -22,11 +22,11 @@ export const UserList = () => {
 
 
         return (
-            <article className="users">
+          
+          <div className="chat-area">
               
-              <Link to="/addNewUser"> 
-                <button>Add User</button>
-              </Link>
+      
+
 
                 {users.map(user => (
                 <User
@@ -34,10 +34,14 @@ export const UserList = () => {
                   id={user.id}
                   userName={user.userName}
                   email={user.email}
-                  familyId={helpAppUserObject.familyId}
+                  // familyId={helpAppUserObject.familyId}
                 />
               ))}
-            </article>
+                      <Link to="/addNewUser">
+  <button className="button">Add User</button>
+</Link>
+            </div>
+            
           );
         };
 
