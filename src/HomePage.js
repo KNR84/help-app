@@ -1,15 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Logo from '../src/Images/HelpLogo.png';
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
   const handleButtonClick = () => {
-    // Add your button click logic here
-    console.log("Button clicked!");
+    navigate('/');
   };
 
   return (
     <div className="logo-area">
-      <button onClick={handleButtonClick} className="logo-button">
+      <button onClick={handleButtonClick} className="logo-button" title="Home">
         <img src={Logo} alt="My Logo" className="logo" />
       </button>
       <h1>Welcome to the Help App!</h1>

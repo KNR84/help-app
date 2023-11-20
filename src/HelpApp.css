@@ -18,9 +18,7 @@ body {
   color:white
  }
  
- /* MessageEdit.css */
 
-/* MessageEdit.css */
 
 .chat-area {
   display: flex;
@@ -90,6 +88,15 @@ h3 {
   
 }
 
+h6 {
+  color: white; /* Change the text color to blue */
+  font-size: 16px; /* Change the font size to 24 pixels */
+  font-weight: bold; /* Make the text bold */
+  /* Add any other styles you want to modify */
+ text-align: center; /* Center the text horizontally */
+  
+}
+
 .logo-button {
   background: none;
  }
@@ -122,5 +129,20 @@ h3 {
 
 .alert-buttons {
   background: none;
-  width: 200px; /* set your desired width */
-  }
+  width: 160px; /* set your desired width */
+  margin: 20px; 
+ }
+
+
+
+
+.messageForm__title {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center; /* Center the text horizontally */
+  margin: 0; /* Remove any default margin to ensure accurate centering */
+  padding: 0;
+}
+
+

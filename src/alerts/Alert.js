@@ -9,6 +9,6 @@ export const Alert = ({ id, userId, userName, alertDateTime, alertText}) => {
         <strong>{userName}: </strong>
         <em>{new Date(alertDateTime).toLocaleString()}</em>
 
-        <div>Text: {alertText}</div>
+        <div>Message: {alertText}</div>
     </section>
 }

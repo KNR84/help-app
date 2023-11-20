@@ -140,7 +140,6 @@ export const MessageEdit = () => {
               {message.user.userId === helpAppUserObject.id && (
                 <>
                   <button onClick={() => handleEditClick(message.id)}>Edit</button>
-                  
                   <button onClick={() => handleDeleteClick(message.id)}>Delete</button>
                 </>
               )}

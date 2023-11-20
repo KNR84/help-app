@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import { useNavigate } from "react-router-dom"
 import { AlertList } from "./AlertList"
 import danger from '../Images/danger.png';
 import medicalEm from '../Images/medicalEm.png';
@@ -10,16 +9,11 @@ import call from '../Images/call.png';
 import ok from '../Images/ok.png';
 
 
-
-
 export const AddNewAlert = (props) => {
 
   //creates the variable user with initial state objects userName, email, password, isAdmin and familyId.
   const localhelpAppUser = localStorage.getItem("helpApp_user")
   const helpAppUserObject = JSON.parse(localhelpAppUser)
-
-  //allows page to navigate elsewhere
-  let navigate = useNavigate()
 
   const [alertTypes, setAlertTypes] = useState([])
 
@@ -53,14 +47,9 @@ export const AddNewAlert = (props) => {
     })
       .then(res => res.json())
 
-}
+  }
 
-
-
-
-
-
-  const addAlertType = (event) => {
+    const addAlertType = (event) => {
     const newAlertObject = {
       userId: helpAppUserObject.id,
       alertTypesId: +event.target.value,
@@ -73,15 +62,12 @@ export const AddNewAlert = (props) => {
 
   }
 
-
-  //function updates the user state as the user types in the form fields. It creates a copy of the current state - modidifies it with the new information inputed by the user and then sets the state with the updated copy. 
+//function updates the user state as the user types in the form fields. It creates a copy of the current state - modidifies it with the new information inputed by the user and then sets the state with the updated copy. 
   const updateAlert = (evt) => {
     const copy = { ...alert }
     copy[evt.target.id] = evt.target.value
     setAlert(copy)
-
-
-  }
+}
 
   const handleButtonClick = (alertTypeId) => {
     setAlert((prevAlert) => ({
@@ -89,6 +75,8 @@ export const AddNewAlert = (props) => {
       alertTypesId: alertTypeId,
     }));
   };
+
+
 
 
   const clickDanger = () => {
@@ -116,55 +104,61 @@ export const AddNewAlert = (props) => {
     handleButtonClick(5); // Assuming 6 is the alertTypeId for "on my way"
     console.log("Button call me clicked!");
   };
-const clickCall = () => {
+  const clickCall = () => {
     handleButtonClick(6); // Assuming 5 is the alertTypeId for "call"
     console.log("Button call me clicked!");
   };
-const clickOk = () => {
+  const clickOk = () => {
     handleButtonClick(7); // Assuming 5 is the alertTypeId for "ok"
     console.log("Button call me clicked!");
   };
 
 
- 
-
 //this is the render method of the component. It returns the JSX that represents the form with input fields for new alerts.
   return (
     <form className="messageForm">
-      <h2 className="messageForm__title">Click a button to send a message</h2>
+      <div className="messageForm__title">Push a button to send your message</div>
 
       <fieldset>
         <br></br>
         <button onClick={clickDanger} className="alert-buttons">
           <img src={danger} alt="My Logo" className="logo" />
+          <h6>Danger</h6>
         </button>
 
         <button onClick={clickMedicalEm} className="alert-buttons">
           <img src={medicalEm} alt="My Logo" className="logo" />
+          <h6>Sick</h6>
         </button>
 
         <button onClick={clickHomework} className="alert-buttons">
           <img src={homework} alt="My Logo" className="logo" />
+          <h6>Forgot homework</h6>
         </button>
 
         <button onClick={clickNeedRide} className="alert-buttons">
           <img src={needRide} alt="My Logo" className="logo" />
+          <h6>Pick me up</h6>
         </button>
 
         <button onClick={clickOnMyWay} className="alert-buttons">
           <img src={call} alt="My Logo" className="logo" />
+          <h6>Call me</h6>
         </button>
 
         <button onClick={clickCall} className="alert-buttons">
           <img src={onMyWay} alt="My Logo" className="logo" />
+          <h6>On my way</h6>
         </button>
 
         <button onClick={clickOk} className="alert-buttons">
           <img src={ok} alt="My Logo" className="logo" />
+          <h6>Ok</h6>
         </button>
+
       </fieldset>
 
-      <h2>or select from the menu</h2>
+      <h2>or select from the following menu:</h2>
 
       <div className="messageForm">
         <select className="custom-dropdown" onChange={addAlertType} name="alertTypes" id="alertTypes">
@@ -180,7 +174,8 @@ const clickOk = () => {
       </div>
 
       <fieldset>
-        <button onClick={addNewAlert} type="submit">
+        <button onClick={addNewAlert} type="submit"
+        className="btn btn-primary button">
           Submit
         </button>
       </fieldset>
