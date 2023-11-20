@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
+// import HelpLogo from '../Images/HelpLogo.png';
+
 
 
 
@@ -37,8 +39,8 @@ export const Login = () => {
         <main className="container--login">
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Login</h1>
-                    <img src="src/auth/images/Help!.png" alt="Help!" /> 
+                    <h2>Welcome to Help!</h2>
+                    {/* <img src="../Images/HelpLogo.png" alt="Help!" />  */}
                     <fieldset>
                         <label htmlFor="inputEmail">Email address</label>
                         <input
@@ -50,7 +52,7 @@ export const Login = () => {
                             required autoFocus/>
                     </fieldset>
                     <fieldset>
-                        <label htmlFor="inputPassword">Family Password</label>
+                        <label htmlFor="inputPassword">Password</label>
                         <input
                             type="password"
                             value={password}

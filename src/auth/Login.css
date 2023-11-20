@@ -37,7 +37,12 @@ fieldset {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .container--login {
-    text-align: center;
+    display: flex;
+    flex-direction: column; /* Messages are stacked vertically */
+   
+    color: black;
+    border: 1cap solid red; /* Add a 1px solid border with a light gray color */
+    padding: 1px; /* Optional: Add some padding to the chat area */
 }
 .form--login {
     background-position-x: right;
@@ -46,6 +51,7 @@ fieldset {
     min-width: 45rem;
     background-color: black;
     background-blend-mode: overlay;
+    
     background-repeat: no-repeat;
     font-style: normal;
     color: white;

@@ -32,7 +32,7 @@ export const AlertList = () => {
                   alertTypesId={alert.alertTypesId}
                   alertDateTime={alert.alertDateTime}
                   familyId={helpAppUserObject.familyId}
-                  alertText={alert.alertTypes.alertText} 
+                  alertText={alert.alertTypes?.alertText}
                 />
               ))}
             </article>
