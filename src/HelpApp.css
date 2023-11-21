@@ -1,0 +1,197 @@
+
+body {
+  background-color: black
+ 
+ }
+ .form--login{
+  background-color: black;
+ }
+ footer{
+  background-color: black;
+ }
+ .navbar__link{
+  color: white;
+ }
+ html {background-color: black
+}
+.messageForm {
+  color:white
+ }
+ 
+
+
+.chat-area {
+  display: flex;
+  flex-direction: column; /* Messages are stacked vertically */
+  background-color: white;
+  color: black;
+  border: 1cap solid red; /* Add a 1px solid border with a light gray color */
+  padding: 10px; /* Optional: Add some padding to the chat area */
+}
+
+.message-container {
+  display: flex;
+  align-items: center; /* Align items (message and button) vertically in each container */
+  margin-bottom: 10px; /* Add margin between messages */
+   border: 1px solid #ccc; /* Border for each message */
+  padding: 8px; /* Optional: Add some padding to each message */
+  margin-bottom: 5px; /* Optional: Add some space between messages */
+}
+
+.message-container p {
+  margin-right: 10px; /* Add margin to separate the message and button */
+}
+
+.custom-dropdown {
+  width: 50%; /* Adjust the width as needed */
+  padding: 10px; /* Adjust the padding as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  /* Add any other styles you want to customize */
+}
+
+/* src/components/Header.css */
+
+.logo {
+  width: 100px; /* Adjust the width and height according to your needs */
+  height: 100px;
+}
+
+.logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  background-color: black;
+ }
+
+.logo {
+  width: 600px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+h2 {
+  color: white; /* Change the text color to blue */
+  font-size: 24px; /* Change the font size to 24 pixels */
+  font-weight: bold; /* Make the text bold */
+  margin-left: 20px; /* Adjust the value according to your needs */
+  /* Add any other styles you want to modify */
+}
+
+h3 {
+  color: white; /* Change the text color to blue */
+  font-size: 24px; /* Change the font size to 24 pixels */
+  font-weight: bold; /* Make the text bold */
+  /* Add any other styles you want to modify */
+  background-color: red;
+  padding: 10px;
+  width: 100%; /* Make the background color extend the entire width */
+  text-align: center; /* Center the text horizontally */
+  
+}
+
+h6 {
+  color: white; /* Change the text color to blue */
+  font-size: 16px; /* Change the font size to 24 pixels */
+  font-weight: bold; /* Make the text bold */
+  /* Add any other styles you want to modify */
+ text-align: center; /* Center the text horizontally */
+  
+}
+
+.logo-button {
+  background: none;
+ }
+
+ .alerts {
+  border: 1px solid #ccc; /* Border for each message */
+  padding: 10px; /* Optional: Add some padding to the alert */
+  margin-bottom: 10px; /* Optional: Add some space between alerts */
+  color: black; /* Set the text color to white */
+  background-color: white; /* Set the background color to black */
+}
+
+
+.button {
+  background-color: red; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex; /* Use inline-flex instead of inline-block */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin-left: 20px; /* Adjust the value based on your preference */
+}
+
+.alert-buttons {
+  background: none;
+  width: 170px; /* set your desired width */
+  margin: 20px; 
+ }
+
+
+.messageForm__title {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center; /* Center the text horizontally */
+  margin: 0; /* Remove any default margin to ensure accurate centering */
+  padding: 0;
+}
+
+.messageForm {
+  color: white;
+  font-size: 20px;
+  margin: 0; /* Remove any default margin to ensure accurate centering */
+  
+}
+
+
+.homepage-footer {
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.custom-dropdown {
+  font-size: 10;
+  margin-left: 20px; /* Adjust the value according to your needs */
+  }
+
+/* HomePage.css */
+
+.welcome-container {
+  text-align: center;
+  margin-top: 50px; /* Adjust as needed */
+  opacity: 0; /* Start with zero opacity */
+  transform: translateY(-20px); /* Move the text up initially */
+  animation: fadeInUp 1s ease-out forwards; /* Define the animation */
+}
+
+.welcome-text {
+  font-size: 3em;
+  color: red; /* Change the color to your preference */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+  font-weight: bold;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

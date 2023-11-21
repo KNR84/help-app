@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+}
+
+.navbar__item {
+    flex-basis: 20%;
+    list-style-type: none;
+}
+
+.navbar__logout {
+    margin-left: auto;
+}
+
+.navbar {
+    position: fixed;
+    font-size: 18px; /* Change the font size to 24 pixels */
+    font-weight: bold; /* Make the text bold */
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: red;
+    justify-content: center;
+    z-index: 1000; /* Set a high z-index to ensure it appears above other elements */
+    /* Add any other styling you want for your navbar */
+  }
+  
+  /* Add styling for the navigation links, logo, etc. */
+  
