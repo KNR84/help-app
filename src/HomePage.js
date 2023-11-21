@@ -11,14 +11,25 @@ const HomePage = () => {
 
   return (
     <div className="logo-area">
-      <button onClick={handleButtonClick} className="logo-button" title="Home">
-        <img src={Logo} alt="My Logo" className="logo" />
-      </button>
-      <h1>Welcome to the Help App!</h1>
-      <h3>An easy-to-use application that keeps your family connected</h3>
-      {/* Other content of your home page */}
+    <div className="information" />
+
+    <button onClick={handleButtonClick} className="logo-button" title="Home">
+      <img src={Logo} alt="My Logo" className="logo" />
+    </button>
+
+    <div className="welcome-container">
+      <h1 className="welcome-text">Welcome to the Help App!</h1>
     </div>
-  );
+
+    <footer className="homepage-footer">
+      <h3>
+A user-friendly app designed to keep your family seamlessly connected.</h3>
+    </footer>
+  </div>
+);
 };
+    
+
+   
 
 export default HomePage;

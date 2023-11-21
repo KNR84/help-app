@@ -73,6 +73,7 @@ h2 {
   color: white; /* Change the text color to blue */
   font-size: 24px; /* Change the font size to 24 pixels */
   font-weight: bold; /* Make the text bold */
+  margin-left: 20px; /* Adjust the value according to your needs */
   /* Add any other styles you want to modify */
 }
 
@@ -125,15 +126,14 @@ h6 {
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+  margin-left: 20px; /* Adjust the value based on your preference */
 }
 
 .alert-buttons {
   background: none;
-  width: 160px; /* set your desired width */
+  width: 170px; /* set your desired width */
   margin: 20px; 
  }
-
-
 
 
 .messageForm__title {
@@ -145,4 +145,53 @@ h6 {
   padding: 0;
 }
 
+.messageForm {
+  color: white;
+  font-size: 20px;
+  margin: 0; /* Remove any default margin to ensure accurate centering */
+  
+}
+
+
+.homepage-footer {
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.custom-dropdown {
+  font-size: 10;
+  margin-left: 20px; /* Adjust the value according to your needs */
+  }
+
+/* HomePage.css */
+
+.welcome-container {
+  text-align: center;
+  margin-top: 50px; /* Adjust as needed */
+  opacity: 0; /* Start with zero opacity */
+  transform: translateY(-20px); /* Move the text up initially */
+  animation: fadeInUp 1s ease-out forwards; /* Define the animation */
+}
+
+.welcome-text {
+  font-size: 3em;
+  color: red; /* Change the color to your preference */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+  font-weight: bold;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 

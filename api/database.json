@@ -38,43 +38,12 @@
     },
     {
       "userName": "Titus",
+      "userId": "",
       "email": "titus@me.com",
       "password": "123",
       "isAdmin": false,
       "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
       "id": 6
-    },
-    {
-      "userName": "Jonas",
-      "email": "jonas@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 7
-    },
-    {
-      "userName": "Emmett",
-      "email": "emmett@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 8
-    },
-    {
-      "userName": "Sample account",
-      "email": "sample@me.com",
-      "password": "123",
-      "isAdmin": true,
-      "familyId": "570a16fd-cbb7-4beb-9fd3-b4e19fbc814f",
-      "id": 9
-    },
-    {
-      "userName": "sample child",
-      "email": "samplechild@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "",
-      "id": 10
     }
   ],
   "alerts": [
@@ -86,18 +55,123 @@
       "id": 3
     },
     {
-      "userId": 6,
-      "alertTypesId": 3,
-      "alertDateTime": "2023-11-21T18:06:48.587Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 4
-    },
-    {
       "userId": 4,
       "alertTypesId": 5,
       "alertDateTime": "2023-11-21T18:07:05.947Z",
       "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
       "id": 5
+    },
+    {
+      "userId": 2,
+      "alertTypesId": 4,
+      "alertDateTime": "2023-11-21T19:12:35.676Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 7,
+      "alertDateTime": "2023-11-21T19:12:50.503Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 6,
+      "alertDateTime": "2023-11-21T21:07:56.684Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T21:54:58.616Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 6,
+      "alertDateTime": "2023-11-21T21:55:04.191Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T22:03:20.630Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T22:08:03.714Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T22:09:12.366Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T22:28:28.324Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T22:28:31.397Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T22:30:09.839Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 18
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 2,
+      "alertDateTime": "2023-11-21T22:30:17.202Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 19
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 3,
+      "alertDateTime": "2023-11-21T22:32:59.373Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 4,
+      "alertDateTime": "2023-11-21T22:33:04.915Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 21
+    },
+    {
+      "userId": 4,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T22:33:35.856Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
+      "id": 22
+    },
+    {
+      "userId": 4,
+      "alertTypesId": 4,
+      "alertDateTime": "2023-11-21T22:33:40.038Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
+      "id": 23
     }
   ],
   "alertTypes": [
@@ -153,20 +227,6 @@
       "id": 11
     },
     {
-      "userId": 6,
-      "alertDateTime": "2023-11-21T18:08:28.526Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "msg": "I do!",
-      "id": 12
-    },
-    {
-      "userId": 7,
-      "alertDateTime": "2023-11-21T18:09:27.598Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "msg": "me too!",
-      "id": 13
-    },
-    {
       "userId": 2,
       "alertDateTime": "2023-11-21T18:51:11.642Z",
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
@@ -181,44 +241,32 @@
       "id": 15
     },
     {
-      "userId": 9,
-      "userName": "",
-      "alertDateTime": "2023-11-21T18:54:19.149Z",
-      "familyId": "",
-      "msg": "Hello sample family",
+      "userId": 2,
+      "alertDateTime": "2023-11-21T19:14:44.863Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "do i have practice tonight? ",
       "id": 16
     },
     {
-      "userId": 9,
-      "userName": "",
-      "alertDateTime": "2023-11-21T18:54:20.173Z",
-      "familyId": "",
-      "msg": "",
+      "userId": 1,
+      "alertDateTime": "2023-11-21T19:15:01.187Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "yes, at 6pm",
       "id": 17
     },
     {
-      "userId": 9,
-      "userName": "",
-      "alertDateTime": "2023-11-21T18:54:20.847Z",
-      "familyId": "",
-      "msg": "",
+      "userId": 2,
+      "alertDateTime": "2023-11-21T19:15:22.221Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "we need to add Daddy to this super cool app!",
       "id": 18
     },
     {
-      "userId": 9,
-      "userName": "",
-      "alertDateTime": "2023-11-21T18:54:21.473Z",
-      "familyId": "",
-      "msg": "",
+      "userId": 4,
+      "alertDateTime": "2023-11-21T22:33:49.050Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
+      "msg": "testing ",
       "id": 19
-    },
-    {
-      "userId": 9,
-      "userName": "",
-      "alertDateTime": "2023-11-21T18:55:35.720Z",
-      "familyId": "",
-      "msg": "hello sample family",
-      "id": 20
     }
   ]
 }

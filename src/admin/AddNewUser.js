@@ -11,10 +11,12 @@ export const AddNewUser = (props) => {
     //creates the variable user with initial state objects userName, email, password, isAdmin and familyId.
     const [user, setUser] = useState({
         userName: "",
+        userId: "",
         email: "",
         password: "",
         isAdmin: false,
         familyId: helpAppUserObject.familyId
+    
     })
     //allows page to navigate elsewhere
     let navigate = useNavigate()
@@ -62,7 +64,7 @@ export const AddNewUser = (props) => {
     return (
         <main style={{ textAlign: "center" }}>
             <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Add new user to your family</h1>
+                <h1 className="h3 mb-3 font-weight-normal"></h1>
                 <fieldset>
                     <label htmlFor="userName"> User Name: </label>
                     <input onChange={updateUser}

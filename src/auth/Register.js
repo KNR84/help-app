@@ -6,6 +6,7 @@ import "./Login.css"
 
 export const Register = (props) => {
     const [user, setUser] = useState({
+        userId:"",
         userName: "",
         email: "",
         password: "",

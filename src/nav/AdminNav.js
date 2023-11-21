@@ -14,10 +14,10 @@ export const AdminNav = () => {
                 <Link className="navbar__link" to="/">Home</Link>
             </li>
             <li className="navbar__item active">
-                <Link className="navbar__link" to="/AddNewUser">Add a new user</Link>
+                <Link className="navbar__link" to="/AddNewUser">Add family</Link>
             </li>
             <li className="navbar__item active">
-                <Link className="navbar__link" to="/UserList">User List</Link>
+                <Link className="navbar__link" to="/UserList">Family List</Link>
             </li>
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/AddNewAlert">Add Alert</Link>

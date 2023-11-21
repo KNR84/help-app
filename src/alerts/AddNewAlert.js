@@ -307,7 +307,7 @@ const addAlertType = (event) => {
 //this is the render method of the component. It returns the JSX that represents the form with input fields for new alerts.
   return (
     <form className="messageForm">
-      <div className="messageForm__title">Push a button to send your message</div>
+      <div className="messageForm__title">Please press the button to select your message.</div>
 
       <fieldset>
         <br></br>
@@ -365,7 +365,7 @@ const addAlertType = (event) => {
 
       <fieldset>
         <button onClick={addNewAlert} type="submit"
-        className="btn btn-primary button">
+        className="button">
           Submit
         </button>
       </fieldset>
