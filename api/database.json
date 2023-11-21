@@ -84,6 +84,14 @@
       "isAdmin": false,
       "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
       "id": 10
+    },
+    {
+      "userName": "Rebecca",
+      "email": "rebecca@me.com",
+      "password": "123",
+      "isAdmin": false,
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 11
     }
   ],
   "alerts": [
@@ -179,11 +187,109 @@
       "id": 21
     },
     {
-      "userId": 4,
+      "userId": 1,
+      "alertTypesId": 2,
+      "alertDateTime": "2023-11-21T14:28:27.351Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 3,
+      "alertDateTime": "2023-11-21T14:47:54.858Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 25
+    },
+    {
+      "userId": 1,
       "alertTypesId": 0,
-      "alertDateTime": "2023-11-21T14:24:03.206Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 22
+      "alertDateTime": "2023-11-21T15:26:43.565Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 26
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 4,
+      "alertDateTime": "2023-11-21T15:29:59.001Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 27
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T15:30:36.539Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 28
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 0,
+      "alertDateTime": "2023-11-21T15:30:38.860Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 29
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 0,
+      "alertDateTime": "2023-11-21T15:33:36.681Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 30
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 0,
+      "alertDateTime": "2023-11-21T15:39:20.700Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 31
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 0,
+      "alertDateTime": "2023-11-21T15:40:43.339Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 32
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 0,
+      "alertDateTime": "2023-11-21T15:41:12.086Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 33
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 0,
+      "alertDateTime": "2023-11-21T15:41:14.072Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 34
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 0,
+      "alertDateTime": "2023-11-21T15:50:19.407Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 35
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 0,
+      "alertDateTime": "2023-11-21T15:51:17.469Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 36
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 0,
+      "alertDateTime": "2023-11-21T15:51:19.311Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 37
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T15:56:10.833Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 38
     }
   ],
   "alertTypes": [
@@ -328,6 +434,13 @@
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
       "msg": "Love you too buddy.",
       "id": 21
+    },
+    {
+      "userId": 2,
+      "alertDateTime": "2023-11-21T14:48:48.094Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "I am good mommy",
+      "id": 23
     }
   ]
 }

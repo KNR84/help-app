@@ -26,6 +26,8 @@ export const AddNewAlert = (props) => {
     userName: helpAppUserObject.userName,
   })
 
+  
+
   useEffect(
     () => {
       fetch('http://localhost:8088/alertTypes')
@@ -70,22 +72,35 @@ const addAlertType = (event) => {
 }
 
   const handleButtonClick = (alertTypeId) => {
-    setAlert((prevAlert) => ({
-      ...prevAlert,
-      alertTypesId: alertTypeId,
-    }));
+    const newAlertObject = {
+      userId: helpAppUserObject.id,
+      alertTypesId: 1,
+      alertDateTime: new Date(),
+      familyId: helpAppUserObject.familyId,
+      userName: helpAppUserObject.userName,
+      
+    }
+    setAlert(newAlertObject)
+
   };
 
 
 //This works just needs the right info attached! put to a string
 
-  const clickDanger = () => {
+  const clickDanger = (alertTypeId) => {
+   let alertObj = {
+    userId: helpAppUserObject.id,
+    alertTypesId: +alertTypeId,
+    alertDateTime: new Date(),
+    familyId: helpAppUserObject.familyId,
+    userName: helpAppUserObject.userName,
+   }
     return fetch("http://localhost:8088/alerts?_expand=user/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(alert)
+      body: JSON.stringify(alertObj)
     })
       .then(res => res.json())
 
@@ -163,7 +178,7 @@ const clickMedicalEm = () => {
 
       <fieldset>
         <br></br>
-        <button onClick={clickDanger} className="alert-buttons">
+        <button onClick={() => clickDanger(1)} className="alert-buttons">
           <img src={danger} alt="My Logo" className="logo" />
           <h6>Danger</h6>
         </button>

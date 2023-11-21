@@ -143,7 +143,7 @@ const handleDeleteClick = (messageId) => {
                 <em>{new Date(message.alertDateTime).toLocaleString()}</em>
               </p>
 
-              {message?.user?.userId === helpAppUserObject.id && (   //problem
+              {message?.user?.id === helpAppUserObject.id && (   //problem
                 <>
                   <button onClick={() => handleEditClick(message.id)}>Edit</button>
                   <button onClick={() => handleDeleteClick(message.id)}>Delete</button>
