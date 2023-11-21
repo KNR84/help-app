@@ -32,7 +32,7 @@ export const MessageEdit = () => {
       });
   };
 
-  //////////////////////////////set interval useEffect to refresh page////////////////////////////////////////
+  ///////set interval useEffect to refresh page NOT THE BEST WAY TO DO THIS/////////////
   useEffect(() => {
     // Fetch messages from the API endpoint initially
     getAllMessages();
@@ -96,22 +96,28 @@ export const MessageEdit = () => {
       });
   };
 
-  const handleDeleteClick = (messageId) => {
-    // Check if the logged-in user is the author of the message
-    const selectedMessage = messages.find((message) => message.id === messageId);
+const handleDeleteClick = (messageId) => {
+   // Check if the logged-in user is the author of the message
+  // Find the message with the specified messageId in the 'messages' array
+  const selectedMessage = messages.find((message) => message.id === messageId);   
 
-    if (selectedMessage.user.userId === helpAppUserObject.id) {
-      // Delete the message from the API
-      fetch(`http://localhost:8088/messages/${messageId}`, {
-        method: "DELETE",
-      })
-        .then(getAllMessages)
-        .catch((error) => console.error("Error deleting message:", error));
-    } else {
-      // Optionally, you can provide some feedback to the user that they can't delete this message.
-      alert("You are not the author of this message and cannot delete it.");
-    }
-  };
+
+  // If the message is found and the logged-in user is the author
+  if (selectedMessage && selectedMessage.user.userId === helpAppUserObject.id) {         
+    
+    
+    // Delete the message from the API
+    fetch(`http://localhost:8088/messages/${messageId}`, {
+      method: "DELETE",
+    })
+      .then(getAllMessages)
+      .catch((error) => console.error("Error deleting message:", error));
+  } else {
+    // Optionally, you can provide some feedback to the user that they can't delete this message.
+    alert("You are not the author of this message and cannot delete it.");
+  }
+};
+
 
   return (
     <div className="chat-area">
@@ -137,7 +143,7 @@ export const MessageEdit = () => {
                 <em>{new Date(message.alertDateTime).toLocaleString()}</em>
               </p>
 
-              {message.user.userId === helpAppUserObject.id && (
+              {message?.user?.userId === helpAppUserObject.id && (   //problem
                 <>
                   <button onClick={() => handleEditClick(message.id)}>Edit</button>
                   <button onClick={() => handleDeleteClick(message.id)}>Delete</button>

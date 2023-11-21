@@ -49,7 +49,7 @@ export const AddNewAlert = (props) => {
 
   }
 
-    const addAlertType = (event) => {
+const addAlertType = (event) => {
     const newAlertObject = {
       userId: helpAppUserObject.id,
       alertTypesId: +event.target.value,
@@ -77,40 +77,82 @@ export const AddNewAlert = (props) => {
   };
 
 
-
+//This works just needs the right info attached! put to a string
 
   const clickDanger = () => {
-    handleButtonClick(1); // Assuming 1 is the alertTypeId for "Danger"
-    <h1>I am in Danger</h1>
-    console.log("Button danger clicked!");
+    return fetch("http://localhost:8088/alerts?_expand=user/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(alert)
+    })
+      .then(res => res.json())
 
-  };
+  }
 
-  const clickMedicalEm = () => {
-    handleButtonClick(2); // Assuming 2 is the alertTypeId for "Medical Emergency"
-    console.log("Button medical clicked!");
+
+const clickMedicalEm = () => {
+  return fetch("http://localhost:8088/alerts?_expand=user/", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(alert)
+  })
+    .then(res => res.json())
   };
 
   const clickHomework = () => {
-    handleButtonClick(3); // Assuming 3 is the alertTypeId for "Homework"
-    console.log("Button homework clicked!");
+    return fetch("http://localhost:8088/alerts?_expand=user/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(alert)
+    })
+      .then(res => res.json())
   };
 
   const clickNeedRide = () => {
-    handleButtonClick(4); // Assuming 4 is the alertTypeId for "Need a Ride"
-    console.log("Button need ride clicked!");
+    return fetch("http://localhost:8088/alerts?_expand=user/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(alert)
+    })
+      .then(res => res.json())
   };
   const clickOnMyWay = () => {
-    handleButtonClick(5); // Assuming 6 is the alertTypeId for "on my way"
-    console.log("Button call me clicked!");
+    return fetch("http://localhost:8088/alerts?_expand=user/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(alert)
+    })
+      .then(res => res.json())
   };
   const clickCall = () => {
-    handleButtonClick(6); // Assuming 5 is the alertTypeId for "call"
-    console.log("Button call me clicked!");
+    return fetch("http://localhost:8088/alerts?_expand=user/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(alert)
+    })
+      .then(res => res.json())
   };
   const clickOk = () => {
-    handleButtonClick(7); // Assuming 5 is the alertTypeId for "ok"
-    console.log("Button call me clicked!");
+    return fetch("http://localhost:8088/alerts?_expand=user/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(alert)
+    })
+      .then(res => res.json())
   };
 
 

@@ -15,7 +15,7 @@ export const AlertList = () => {
                 .then(response => response.json())
                 .then((alertArray) => {
                     // Filter alerts based on familyId
-                    const filteredAlerts = alertArray.filter(alert => alert.familyId === helpAppUserObject.familyId);
+                    const filteredAlerts = alertArray.filter(alert => alert.user.familyId === helpAppUserObject.familyId);
                     setAlerts(filteredAlerts);
                 });
         }, [helpAppUserObject.familyId]);
