@@ -15,9 +15,6 @@ export const NonAdminNav = () => {
             </li>
             
             <li className="navbar__item active">
-                <Link className="navbar__link" to="/UserList">User List</Link>
-            </li>
-            <li className="navbar__item active">
                 <Link className="navbar__link" to="/AddNewAlert">Add Alert</Link>
             </li>
             

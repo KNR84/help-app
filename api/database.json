@@ -19,15 +19,6 @@
       "id": 2
     },
     {
-      "userName": "Scotty",
-      "userId": 3,
-      "email": "scotty@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 3
-    },
-    {
       "userName": "Steve",
       "userId": 4,
       "email": "steve@me.com",
@@ -54,368 +45,59 @@
       "id": 6
     },
     {
-      "userName": "Troy",
-      "email": "troy@me.com",
+      "userName": "Jonas",
+      "email": "jonas@me.com",
       "password": "123",
-      "isAdmin": true,
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
+      "isAdmin": false,
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
       "id": 7
     },
     {
-      "userName": "Kelly",
-      "email": "kelly@me.com",
+      "userName": "Emmett",
+      "email": "emmett@me.com",
       "password": "123",
       "isAdmin": false,
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
       "id": 8
     },
     {
-      "userName": "Christian",
-      "email": "christian@me.com",
+      "userName": "Sample account",
+      "email": "sample@me.com",
       "password": "123",
-      "isAdmin": false,
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
+      "isAdmin": true,
+      "familyId": "570a16fd-cbb7-4beb-9fd3-b4e19fbc814f",
       "id": 9
     },
     {
-      "userName": "Jax",
-      "email": "jax@me.com",
+      "userName": "sample child",
+      "email": "samplechild@me.com",
       "password": "123",
       "isAdmin": false,
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
+      "familyId": "",
       "id": 10
-    },
-    {
-      "userName": "Rebecca",
-      "email": "rebecca@me.com",
-      "password": "123",
-      "isAdmin": false,
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 11
     }
   ],
   "alerts": [
     {
-      "userId": 2,
-      "alertTypesId": 2,
-      "alertDateTime": "2023-11-20T16:16:32.597Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 2
-    },
-    {
       "userId": 1,
       "alertTypesId": 5,
-      "alertDateTime": "2023-11-20T16:17:21.996Z",
+      "alertDateTime": "2023-11-21T18:04:52.678Z",
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
       "id": 3
     },
     {
-      "userId": 1,
-      "alertTypesId": 6,
-      "alertDateTime": "2023-11-20T16:31:17.828Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "userId": 6,
+      "alertTypesId": 3,
+      "alertDateTime": "2023-11-21T18:06:48.587Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
       "id": 4
     },
     {
-      "userId": 6,
-      "alertTypesId": 4,
-      "alertDateTime": "2023-11-20T16:57:42.094Z",
+      "userId": 4,
+      "alertTypesId": 5,
+      "alertDateTime": "2023-11-21T18:07:05.947Z",
       "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
       "id": 5
-    },
-    {
-      "userId": 4,
-      "alertTypesId": 5,
-      "alertDateTime": "2023-11-20T16:58:15.052Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 6
-    },
-    {
-      "userId": 9,
-      "alertTypesId": 3,
-      "alertDateTime": "2023-11-20T17:05:19.306Z",
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
-      "id": 7
-    },
-    {
-      "userId": 7,
-      "alertTypesId": 6,
-      "alertDateTime": "2023-11-20T17:05:36.586Z",
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
-      "id": 8
-    },
-    {
-      "userId": 8,
-      "alertTypesId": 5,
-      "alertDateTime": "2023-11-20T17:05:53.385Z",
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
-      "id": 9
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 5,
-      "alertDateTime": "2023-11-20T20:09:24.771Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 10
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 2,
-      "alertDateTime": "2023-11-20T20:09:42.427Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 11
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 4,
-      "alertDateTime": "2023-11-20T20:59:30.361Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 19
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 1,
-      "alertDateTime": "2023-11-21T14:21:46.938Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 20
-    },
-    {
-      "userId": 4,
-      "alertTypesId": 6,
-      "alertDateTime": "2023-11-21T14:24:02.420Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "id": 21
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 2,
-      "alertDateTime": "2023-11-21T14:28:27.351Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 23
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 3,
-      "alertDateTime": "2023-11-21T14:47:54.858Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 25
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 0,
-      "alertDateTime": "2023-11-21T15:26:43.565Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 26
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 4,
-      "alertDateTime": "2023-11-21T15:29:59.001Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 27
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 1,
-      "alertDateTime": "2023-11-21T15:30:36.539Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 28
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 0,
-      "alertDateTime": "2023-11-21T15:30:38.860Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 29
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 0,
-      "alertDateTime": "2023-11-21T15:33:36.681Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 30
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 0,
-      "alertDateTime": "2023-11-21T15:39:20.700Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 31
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 0,
-      "alertDateTime": "2023-11-21T15:40:43.339Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 32
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 0,
-      "alertDateTime": "2023-11-21T15:41:12.086Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 33
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 0,
-      "alertDateTime": "2023-11-21T15:41:14.072Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 34
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 0,
-      "alertDateTime": "2023-11-21T15:50:19.407Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 35
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 0,
-      "alertDateTime": "2023-11-21T15:51:17.469Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 36
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 0,
-      "alertDateTime": "2023-11-21T15:51:19.311Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 37
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 1,
-      "alertDateTime": "2023-11-21T15:56:10.833Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 38
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 1,
-      "alertDateTime": "2023-11-21T16:10:14.210Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 39
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 1,
-      "alertDateTime": "2023-11-21T16:11:52.662Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 41
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 1,
-      "alertDateTime": "2023-11-21T16:14:29.720Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 42
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 1,
-      "alertDateTime": "2023-11-21T16:20:50.687Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 43
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 2,
-      "alertDateTime": "2023-11-21T16:23:08.219Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 44
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 2,
-      "alertDateTime": "2023-11-21T16:23:08.244Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 45
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 2,
-      "alertDateTime": "2023-11-21T16:23:09.722Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 46
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 2,
-      "alertDateTime": "2023-11-21T16:23:09.772Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 47
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 2,
-      "alertDateTime": "2023-11-21T16:24:29.143Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 48
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 3,
-      "alertDateTime": "2023-11-21T16:25:46.430Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 49
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 4,
-      "alertDateTime": "2023-11-21T16:27:07.575Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 50
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 0,
-      "alertDateTime": "2023-11-21T16:27:07.779Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 51
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 5,
-      "alertDateTime": "2023-11-21T16:31:07.144Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 52
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 6,
-      "alertDateTime": "2023-11-21T16:32:11.195Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 53
-    },
-    {
-      "userId": 1,
-      "alertTypesId": 7,
-      "alertDateTime": "2023-11-21T16:33:12.408Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "id": 54
-    },
-    {
-      "userId": 7,
-      "alertTypesId": 1,
-      "alertDateTime": "2023-11-21T16:33:43.038Z",
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
-      "id": 55
-    },
-    {
-      "userId": 7,
-      "alertTypesId": 7,
-      "alertDateTime": "2023-11-21T16:33:46.766Z",
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
-      "id": 56
-    },
-    {
-      "userId": 7,
-      "alertTypesId": 6,
-      "alertDateTime": "2023-11-21T16:33:49.284Z",
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
-      "id": 57
     }
   ],
   "alertTypes": [
@@ -451,122 +133,92 @@
   "messages": [
     {
       "userId": 1,
-      "alertDateTime": "2023-11-20T18:38:48.140Z",
+      "alertDateTime": "2023-11-21T18:50:35.081Z",
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "Hello family and welcome to the Help App!!!",
-      "id": 6
-    },
-    {
-      "userId": 2,
-      "alertDateTime": "2023-11-19T19:07:38.079Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "Hi Mommy, your new app is pretty great",
-      "id": 7
-    },
-    {
-      "userId": 1,
-      "alertDateTime": "2023-11-20T16:18:02.214Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "Thanks, please don't look at the actual code.",
+      "msg": "Hello Family! Welcome to the Help! App",
       "id": 8
     },
     {
-      "userId": 3,
-      "alertDateTime": "2023-11-20T16:18:32.166Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "We would love it if you could do the dishes after this presentation.",
-      "id": 9
-    },
-    {
-      "userId": 2,
-      "alertDateTime": "2023-11-20T16:18:54.673Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "Where is my homework?",
+      "userId": 5,
+      "alertDateTime": "2023-11-21T18:07:50.540Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
+      "msg": "Hello Family, this is a really cool app!",
       "id": 10
     },
     {
-      "userId": 1,
-      "alertDateTime": "2023-11-20T20:05:00.291Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "I put it next to your laptop. Have a good day at school.",
+      "userId": 4,
+      "alertDateTime": "2023-11-21T18:08:13.570Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
+      "msg": "yes, it is. Who wants pizza for dinner?",
       "id": 11
     },
     {
-      "userId": 2,
-      "alertDateTime": "2023-11-20T16:19:39.297Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "love you mommy",
+      "userId": 6,
+      "alertDateTime": "2023-11-21T18:08:28.526Z",
+      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
+      "msg": "I do!",
       "id": 12
     },
     {
-      "userId": 6,
-      "alertDateTime": "2023-11-20T16:57:59.225Z",
+      "userId": 7,
+      "alertDateTime": "2023-11-21T18:09:27.598Z",
       "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "msg": "Hi dad, I made it to school",
+      "msg": "me too!",
       "id": 13
     },
     {
-      "userId": 4,
-      "alertDateTime": "2023-11-20T16:58:44.054Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "msg": "Okay, mom or I will be there at 5 to get you",
+      "userId": 2,
+      "alertDateTime": "2023-11-21T18:51:11.642Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "hi mommy, cool app and all, but I am hungry",
       "id": 14
     },
     {
-      "userId": 5,
-      "alertDateTime": "2023-11-20T16:59:18.327Z",
-      "familyId": "6af27c03-45d3-488c-b840-8c279647c7f6",
-      "msg": "I will get you Titus. See you at 5.",
+      "userId": 1,
+      "alertDateTime": "2023-11-21T18:51:24.598Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "msg": "I will be right there",
       "id": 15
     },
     {
       "userId": 9,
-      "alertDateTime": "2023-11-20T17:06:49.644Z",
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
-      "msg": "Hi family. Welcome to the help app.",
+      "userName": "",
+      "alertDateTime": "2023-11-21T18:54:19.149Z",
+      "familyId": "",
+      "msg": "Hello sample family",
       "id": 16
     },
     {
-      "userId": 7,
-      "alertDateTime": "2023-11-20T17:07:18.297Z",
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
-      "msg": "Hello! This is pretty great!",
+      "userId": 9,
+      "userName": "",
+      "alertDateTime": "2023-11-21T18:54:20.173Z",
+      "familyId": "",
+      "msg": "",
       "id": 17
     },
     {
-      "userId": 7,
-      "alertDateTime": "2023-11-20T18:55:52.867Z",
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
-      "msg": "This is Troy and I should be able to delete this message.",
+      "userId": 9,
+      "userName": "",
+      "alertDateTime": "2023-11-21T18:54:20.847Z",
+      "familyId": "",
+      "msg": "",
       "id": 18
     },
     {
       "userId": 9,
-      "alertDateTime": "2023-11-20T18:56:34.688Z",
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
-      "msg": "This is Christian and I should be able to delete this message. ",
+      "userName": "",
+      "alertDateTime": "2023-11-21T18:54:21.473Z",
+      "familyId": "",
+      "msg": "",
       "id": 19
     },
     {
-      "userId": 7,
-      "alertDateTime": "2023-11-20T20:03:22.140Z",
-      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
-      "msg": "did i break you?",
+      "userId": 9,
+      "userName": "",
+      "alertDateTime": "2023-11-21T18:55:35.720Z",
+      "familyId": "",
+      "msg": "hello sample family",
       "id": 20
-    },
-    {
-      "userId": 1,
-      "alertDateTime": "2023-11-20T20:05:18.492Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "Love you too buddy.",
-      "id": 21
-    },
-    {
-      "userId": 2,
-      "alertDateTime": "2023-11-21T14:48:48.094Z",
-      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
-      "msg": "I am good mommy",
-      "id": 23
     }
   ]
 }
