@@ -290,6 +290,132 @@
       "alertDateTime": "2023-11-21T15:56:10.833Z",
       "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
       "id": 38
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T16:10:14.210Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 39
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T16:11:52.662Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 41
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T16:14:29.720Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 42
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T16:20:50.687Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 43
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 2,
+      "alertDateTime": "2023-11-21T16:23:08.219Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 44
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 2,
+      "alertDateTime": "2023-11-21T16:23:08.244Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 45
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 2,
+      "alertDateTime": "2023-11-21T16:23:09.722Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 46
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 2,
+      "alertDateTime": "2023-11-21T16:23:09.772Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 47
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 2,
+      "alertDateTime": "2023-11-21T16:24:29.143Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 48
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 3,
+      "alertDateTime": "2023-11-21T16:25:46.430Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 49
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 4,
+      "alertDateTime": "2023-11-21T16:27:07.575Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 50
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 0,
+      "alertDateTime": "2023-11-21T16:27:07.779Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 51
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 5,
+      "alertDateTime": "2023-11-21T16:31:07.144Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 52
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 6,
+      "alertDateTime": "2023-11-21T16:32:11.195Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 53
+    },
+    {
+      "userId": 1,
+      "alertTypesId": 7,
+      "alertDateTime": "2023-11-21T16:33:12.408Z",
+      "familyId": "104190d3-51ad-4feb-a29e-1851043f97c0",
+      "id": 54
+    },
+    {
+      "userId": 7,
+      "alertTypesId": 1,
+      "alertDateTime": "2023-11-21T16:33:43.038Z",
+      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
+      "id": 55
+    },
+    {
+      "userId": 7,
+      "alertTypesId": 7,
+      "alertDateTime": "2023-11-21T16:33:46.766Z",
+      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
+      "id": 56
+    },
+    {
+      "userId": 7,
+      "alertTypesId": 6,
+      "alertDateTime": "2023-11-21T16:33:49.284Z",
+      "familyId": "a5450ecd-840c-4555-98bf-a3d2049c6cc9",
+      "id": 57
     }
   ],
   "alertTypes": [

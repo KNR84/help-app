@@ -107,68 +107,201 @@ const addAlertType = (event) => {
   }
 
 
-const clickMedicalEm = () => {
-  return fetch("http://localhost:8088/alerts?_expand=user/", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(alert)
-  })
-    .then(res => res.json())
-  };
+// const clickMedicalEm = () => {
+//   return fetch("http://localhost:8088/alerts?_expand=user/", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json"
+//     },
+//     body: JSON.stringify(alert)
+//   })
+//     .then(res => res.json())
+//   };
 
-  const clickHomework = () => {
-    return fetch("http://localhost:8088/alerts?_expand=user/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(alert)
-    })
-      .then(res => res.json())
-  };
 
-  const clickNeedRide = () => {
-    return fetch("http://localhost:8088/alerts?_expand=user/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(alert)
-    })
-      .then(res => res.json())
-  };
-  const clickOnMyWay = () => {
-    return fetch("http://localhost:8088/alerts?_expand=user/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(alert)
-    })
-      .then(res => res.json())
-  };
-  const clickCall = () => {
-    return fetch("http://localhost:8088/alerts?_expand=user/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(alert)
-    })
-      .then(res => res.json())
-  };
-  const clickOk = () => {
-    return fetch("http://localhost:8088/alerts?_expand=user/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(alert)
-    })
-      .then(res => res.json())
-  };
+
+  const clickMedicalEm = (alertTypeId) => {
+    let alertObj = {
+     userId: helpAppUserObject.id,
+     alertTypesId: +alertTypeId,
+     alertDateTime: new Date(),
+     familyId: helpAppUserObject.familyId,
+     userName: helpAppUserObject.userName,
+    }
+     return fetch("http://localhost:8088/alerts?_expand=user/", {
+       method: "POST",
+       headers: {
+         "Content-Type": "application/json"
+       },
+       body: JSON.stringify(alertObj)
+     })
+       .then(res => res.json())
+ 
+   }
+
+  // const clickHomework = () => {
+  //   return fetch("http://localhost:8088/alerts?_expand=user/", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json"
+  //     },
+  //     body: JSON.stringify(alert)
+  //   })
+  //     .then(res => res.json())
+  // };
+
+
+
+  const clickHomework = (alertTypeId) => {
+    let alertObj = {
+     userId: helpAppUserObject.id,
+     alertTypesId: +alertTypeId,
+     alertDateTime: new Date(),
+     familyId: helpAppUserObject.familyId,
+     userName: helpAppUserObject.userName,
+    }
+     return fetch("http://localhost:8088/alerts?_expand=user/", {
+       method: "POST",
+       headers: {
+         "Content-Type": "application/json"
+       },
+       body: JSON.stringify(alertObj)
+     })
+       .then(res => res.json())
+ 
+   }
+
+  // const clickNeedRide = () => {
+  //   return fetch("http://localhost:8088/alerts?_expand=user/", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json"
+  //     },
+  //     body: JSON.stringify(alert)
+  //   })
+  //     .then(res => res.json())
+  // };
+
+
+  const clickNeedRide = (alertTypeId) => {
+    let alertObj = {
+     userId: helpAppUserObject.id,
+     alertTypesId: +alertTypeId,
+     alertDateTime: new Date(),
+     familyId: helpAppUserObject.familyId,
+     userName: helpAppUserObject.userName,
+    }
+     return fetch("http://localhost:8088/alerts?_expand=user/", {
+       method: "POST",
+       headers: {
+         "Content-Type": "application/json"
+       },
+       body: JSON.stringify(alertObj)
+     })
+       .then(res => res.json())
+ 
+   }
+ 
+
+
+
+  // const clickOnMyWay = () => {
+  //   return fetch("http://localhost:8088/alerts?_expand=user/", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json"
+  //     },
+  //     body: JSON.stringify(alert)
+  //   })
+  //     .then(res => res.json())
+  // };
+
+
+  const clickOnMyWay = (alertTypeId) => {
+    let alertObj = {
+     userId: helpAppUserObject.id,
+     alertTypesId: +alertTypeId,
+     alertDateTime: new Date(),
+     familyId: helpAppUserObject.familyId,
+     userName: helpAppUserObject.userName,
+    }
+     return fetch("http://localhost:8088/alerts?_expand=user/", {
+       method: "POST",
+       headers: {
+         "Content-Type": "application/json"
+       },
+       body: JSON.stringify(alertObj)
+     })
+       .then(res => res.json())
+ 
+   }
+  
+  
+  // const clickCall = () => {
+  //   return fetch("http://localhost:8088/alerts?_expand=user/", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json"
+  //     },
+  //     body: JSON.stringify(alert)
+  //   })
+  //     .then(res => res.json())
+  // };
+
+
+  const clickCall = (alertTypeId) => {
+    let alertObj = {
+     userId: helpAppUserObject.id,
+     alertTypesId: +alertTypeId,
+     alertDateTime: new Date(),
+     familyId: helpAppUserObject.familyId,
+     userName: helpAppUserObject.userName,
+    }
+     return fetch("http://localhost:8088/alerts?_expand=user/", {
+       method: "POST",
+       headers: {
+         "Content-Type": "application/json"
+       },
+       body: JSON.stringify(alertObj)
+     })
+       .then(res => res.json())
+ 
+   }
+
+
+// const clickOk = () => {
+//     return fetch("http://localhost:8088/alerts?_expand=user/", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json"
+//       },
+//       body: JSON.stringify(alert)
+//     })
+//       .then(res => res.json())
+//   };
+
+
+
+  
+  const clickOk = (alertTypeId) => {
+    let alertObj = {
+     userId: helpAppUserObject.id,
+     alertTypesId: +alertTypeId,
+     alertDateTime: new Date(),
+     familyId: helpAppUserObject.familyId,
+     userName: helpAppUserObject.userName,
+    }
+     return fetch("http://localhost:8088/alerts?_expand=user/", {
+       method: "POST",
+       headers: {
+         "Content-Type": "application/json"
+       },
+       body: JSON.stringify(alertObj)
+     })
+       .then(res => res.json())
+ 
+   }
+
 
 
 //this is the render method of the component. It returns the JSX that represents the form with input fields for new alerts.
@@ -183,32 +316,32 @@ const clickMedicalEm = () => {
           <h6>Danger</h6>
         </button>
 
-        <button onClick={clickMedicalEm} className="alert-buttons">
+        <button onClick={() => clickMedicalEm(2)} className="alert-buttons">
           <img src={medicalEm} alt="My Logo" className="logo" />
           <h6>Sick</h6>
         </button>
 
-        <button onClick={clickHomework} className="alert-buttons">
+        <button onClick={() => clickHomework(3)} className="alert-buttons">
           <img src={homework} alt="My Logo" className="logo" />
           <h6>Forgot homework</h6>
         </button>
 
-        <button onClick={clickNeedRide} className="alert-buttons">
+        <button onClick={() => clickNeedRide(4)} className="alert-buttons">
           <img src={needRide} alt="My Logo" className="logo" />
           <h6>Pick me up</h6>
         </button>
 
-        <button onClick={clickOnMyWay} className="alert-buttons">
-          <img src={call} alt="My Logo" className="logo" />
-          <h6>Call me</h6>
-        </button>
-
-        <button onClick={clickCall} className="alert-buttons">
+        <button onClick={() => clickOnMyWay(5)} className="alert-buttons">
           <img src={onMyWay} alt="My Logo" className="logo" />
           <h6>On my way</h6>
         </button>
 
-        <button onClick={clickOk} className="alert-buttons">
+        <button onClick={() => clickCall(6)} className="alert-buttons">
+          <img src={call} alt="My Logo" className="logo" />
+          <h6>Call me</h6>
+        </button>
+
+        <button onClick={() => clickOk(7)} className="alert-buttons">
           <img src={ok} alt="My Logo" className="logo" />
           <h6>Ok</h6>
         </button>
